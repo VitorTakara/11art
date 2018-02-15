@@ -1,3 +1,3 @@
-funtion(){
+function(){
 	
 }
