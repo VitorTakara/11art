@@ -4,26 +4,49 @@
     height: 100%;
 }
 
+.tituloBoasVindas{
+    padding-top: 50px;
+}
+
 .modulo {
-    height: 300px;
+    padding-top: 50px;
+    min-height: 500px;
+}
+
+.modulo-botao{
+    width: 90%;
+    background: $color-modulo-botao;
+    padding: 15px 10px;
+    color: white;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    transition: .2s;
+}
+
+.modulo-botao:hover{
+    background: white;
+    color: $color-11art;
+    border-radius: 5px;
+    transition: .2s;
 }
 
 .modulo-design, .modulo-web, .modulo-video, .modulo-3d{
     height: 100%;
+    padding: 10px 10px;
 }
 
 .modulo-design {
-    background: rgb(49, 255, 77);
+    background: $color-modulo-design;
 }
 
 .modulo-web {
-    background: rgb(40, 230, 255);
+    background: $color-modulo-web;
 }
 
 .modulo-video {
-    background: rgb(255, 40, 40);
+    background: $color-modulo-video;
 }
 
 .modulo-3d {
-    background: rgb(115, 40, 255);
+    background: $color-modulo-3d;
 }

@@ -1,9 +1,6 @@
 // Variáveis
 @import "variables/index.scss";
 
-// Base
-@import "base/index.scss";
-
 // Mixins
 @import "mixins/index.scss";
 
@@ -14,9 +11,17 @@
 @import "plugins/bootstrap-4.0.0/bootstrap-reboot.scss";
 @import "plugins/bootstrap-4.0.0/bootstrap-grid.scss";
 @import "plugins/bootstrap-4.0.0/utilities/main.scss";
-@import "plugins/bootstrap-4.0.0/_dropdown.scss";
 @import "plugins/bootstrap-4.0.0/_mixins.scss";
+@import "plugins/bootstrap-4.0.0/_dropdown.scss";
 @import "plugins/bootstrap-4.0.0/_navbar.scss";
+@import "plugins/bootstrap-4.0.0/bootstrap.scss";
 
 // Media Queries
 @import "media queries/index.scss";
+
+// Base
+@import "base/index.scss";
+
+// Views
+
+@import "views/home/index.scss";

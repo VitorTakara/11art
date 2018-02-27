@@ -2,23 +2,33 @@ html, body {
     height: 100%;
 }
 
-.container-fluid{
-    padding: 0 !important;
+.navbar-toggler {
+    border: solid 3px white;
+    padding: 1rem 1rem;
+    font-size: 2em;
+}
+
+.navbar-toggler span{
+    color: white;
+}
+
+.container-fluid {
+    padding: 0;
     height: 100%;
 }
 
-.navbar-11art{
-    background: #ff8034;
+.navbar-11art {
+    background: $color-11art;
 }
 
-.nav-item a{
+.nav-item a {
     color: white;
     padding: 5px;
     border-bottom: 0px solid white;
     transition: .1s;
 }
 
-.nav-item a:hover{
+.nav-item a:hover {
     color: white;
     text-decoration: none;
     border-bottom: 2px solid white;
