@@ -11,10 +11,12 @@
 @import "helper classes/index.scss";
 
 // Plugins
-@import "plugins/bootstrap-grid.scss";
+@import "plugins/bootstrap-4.0.0/bootstrap-reboot.scss";
+@import "plugins/bootstrap-4.0.0/bootstrap-grid.scss";
+@import "plugins/bootstrap-4.0.0/utilities/main.scss";
+@import "plugins/bootstrap-4.0.0/_dropdown.scss";
+@import "plugins/bootstrap-4.0.0/_mixins.scss";
+@import "plugins/bootstrap-4.0.0/_navbar.scss";
 
 // Media Queries
 @import "media queries/index.scss";
-
-// Views
-@import "views/home/index.scss";

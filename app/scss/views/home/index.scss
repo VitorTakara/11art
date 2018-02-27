@@ -1,0 +1,29 @@
+.home-background {
+    background-image: url("../../../img/bg.jpg");
+    background-size: cover;
+    height: 100%;
+}
+
+.modulo {
+    height: 300px;
+}
+
+.modulo-design, .modulo-web, .modulo-video, .modulo-3d{
+    height: 100%;
+}
+
+.modulo-design {
+    background: rgb(49, 255, 77);
+}
+
+.modulo-web {
+    background: rgb(40, 230, 255);
+}
+
+.modulo-video {
+    background: rgb(255, 40, 40);
+}
+
+.modulo-3d {
+    background: rgb(115, 40, 255);
+}
