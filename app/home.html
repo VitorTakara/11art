@@ -10,57 +10,75 @@
 </head>
 <body>
     <main class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-11art navbar-bg-11art">
+        <!-- [ START ] CONTAINER FUILD -->
+        <nav class="navbar navbar-expand-lg navbar-11art">
+            <!-- [ START ] NAVBAR -->
             <div class="container">
-                <a class="navbar-brand d-inline" href="#"> <img src="img/11Art_Original.png" width="50" height="80" alt=""> </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-                <div class="collapse navbar-collapse d-inline" id="navbarNavDropdown">
+                <a class="navbar-brand" href="#"> <img src="img/11Art_Original.png" width="50" height="80" alt=""> </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbartoogle" aria-controls="navbartoogle" aria-expanded="false" aria-label="Toggle navigation"><span>☰</span></button>
+                <div class="collapse navbar-collapse" id="navbartoogle">
                     <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item active"> <a class="nav-link" href="#">HOME</a> </li>
-                    <li class="nav-item"> <a class="nav-link" href="#">SERVIÇOS</a> </li>
-                    <li class="nav-item"> <a class="nav-link" href="#">PORTFOLIO</a> </li>
-                    <li class="nav-item"> <a class="nav-link" href="#">SOBRE NÓS</a> </li>
-                    <li class="nav-item"> <a class="nav-link" href="#">CONTATO</a> </li>
-                    </ul>    
+                        <li class="nav-item active"> <a class="nav-link" href="#">HOME</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">SERVIÇOS</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">PORTFOLIO</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">SOBRE NÓS</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">CONTATO</a> </li>
+                    </ul>
                 </div>
             </div>
+            <!-- [ END ] NAVBAR -->
         </nav>
+
         <section class="home-background">
+            <!-- [ START ] HOME MODULOS -->
             <article class="container">
-                <h1 class="text-center text-white">Bem vindo! Conta pra gente, do que você precisa? ;)</h1>
+                <h1 class="text-center text-white tituloBoasVindas"><span class="font-weight-bold">Bem vindo!</span> Conta pra gente, do que você precisa? <span class="font-weight-bold">;)</span></h1>
 
                 <div class="row">
-                    <div class="col-md-3 modulo">
-                        <div class="modulo-design">
+                    <div class="col-lg-3 col-md-6 modulo">
+                        <div class="modulo-design text-center">
+                            <img class="mt-4 mb-4" src="http://via.placeholder.com/200x200">
                             <h3>Design Gráfico</h3>
+                            <p>BANNER, FYLER, MIDIAS SOCIAIS, IMPRESSOS...</p>
+                            <button class="modulo-botao">CONTINUAR</button>
                         </div>
                     </div>
                     
-                    <div class="col-md-3 modulo">
-                        <div class="modulo-web">
+                    <div class="col-lg-3 col-md-6 modulo">
+                        <div class="modulo-web text-center">
+                            <img class="mt-4 mb-4" src="http://via.placeholder.com/200x200">
                             <h3>Website</h3>
+                            <p>COMPLETO, REPONSIVO, RÁPIDO, SEO, ACESSÍVEL...</p>
+                            <button class="modulo-botao">CONTINUAR</button>
                         </div>
                     </div>
 
-                    <div class="col-md-3 modulo">
-                        <div class="modulo-video">
-                            <h3>video</h3>
+                    <div class="col-lg-3 col-md-6 modulo">
+                        <div class="modulo-video text-center">
+                            <img class="mt-4 mb-4" src="http://via.placeholder.com/200x200">
+                            <h3>Produção Vídeo</h3>
+                            <p>EDIÇÃO, MONTAGEM, CLIP, FINALIZAÇÃO, EFEITOS...</p>
+                            <button class="modulo-botao">CONTINUAR</button>
                         </div>
                     </div>
 
-                    <div class="col-md-3 modulo">
-                        <div class="modulo-3d">    
-                            <h3>3d</h3>
+                    <div class="col-lg-3 col-md-6 modulo">
+                        <div class="modulo-3d text-center">    
+                            <img class="mt-4 mb-4" src="http://via.placeholder.com/200x200">
+                            <h3 class="titulo">Modelagem 3D</h3>
+                            <p>PERSONAGEM, CENÁRIO, AMBIENTE, OBJETOS...</p>
+                            <button class="modulo-botao">CONTINUAR</button>
                         </div>
                     </div>
                 </div>
-
-
             </article>
+            <!-- [ END ] HOME MODULOS -->
         </section>
+        <!-- [ END ] CONTAINER FUILD -->
     </main>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
