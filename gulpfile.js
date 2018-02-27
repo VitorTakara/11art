@@ -1,3 +1,12 @@
+/*
+
+    GULPFILE 11ART - COMANDOS
+
+    1) gulp build - compila o projeto e serve pelo browserSync para o autoreload
+    2) gulp watch - assiste por mudanças e compila se houverem
+
+*/
+
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     prefix = require('gulp-autoprefixer'),
@@ -30,13 +39,13 @@ gulp.task('html', function() {
 
 // SASS
 gulp.task('sass', function() {
-    return gulp.src(['app/scss/*.scss'])
+    return gulp.src(['app/scss/main.scss'])
         .pipe(sass({outputStyle: 'expanded'}).on("error", notify.onError()))
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
         .pipe(cssnano({zindex: false}))
         .pipe(gulp.dest('dist/css'))
         .pipe(browserSync.reload({stream: true}))
-        .pipe(gulp.dest('app/css'));
+        //.pipe(gulp.dest('app/css'));
 });
 
 // JS
@@ -44,7 +53,7 @@ gulp.task('sass', function() {
 gulp.task('js', function() {
     return gulp.src(['app/js/**/*.js'])
         .pipe(rigger())
-		.pipe(concat('build.js'))
+		.pipe(concat('main.js'))
         .pipe(uglify()) 
         .pipe(gulp.dest('dist/js'))
         .pipe(browserSync.reload({stream: true}));
@@ -75,6 +84,7 @@ gulp.task('watch', function() {
     gulp.watch('app/js/**/*.js', ['js']);
     gulp.watch('app/fonts/**/*.*', ['fonts']);
     gulp.watch('app/img/**/*.*', ['img']);
+    console.log("\n\n\n11Art - GulpFile\n(~O3O')~ ASSISTINDO MUDANCAS! (~O3O')~\n\n\n")
 });
 
 // BUILD
@@ -84,5 +94,5 @@ gulp.task('finish', function(){
 });
 
 gulp.task('build', function(){
-	runSequence('clear', 'html', 'sass', 'js', 'fonts', 'img', 'browser-sync', 'watch', 'finish');
+	runSequence('clear', 'html', 'sass', 'js', 'fonts', 'img', 'browser-sync', 'finish');
 });
