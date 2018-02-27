@@ -22,20 +22,27 @@ var gulp = require('gulp'),
 
 // BROWSERSYNC
 gulp.task('browser-sync', function() {
-    browserSync({
+    browserSync.init({
         server: {
             baseDir: 'dist',
             index: "home.html"
-        },
-        notify: false
+        }
     });
+    //Vai dar reload na tela a cada mudança que ele encontrar
+    gulp.watch('app/**/*').on('change', browserSync.reload);
+    
+    gulp.watch('app/*.html', ['html']);
+    gulp.watch('app/scss/**/*.scss', ['sass', 'sass-especificos']);
+    gulp.watch('app/js/**/*.js', ['js']);
+    gulp.watch('app/fonts/**/*.*', ['fonts']);
+    gulp.watch('app/img/**/*.*', ['img']);
 });
 
 // HTML
 gulp.task('html', function() {
     return gulp.src('app/*.html')
         .pipe(gulp.dest('dist'))
-        .pipe(browserSync.reload({stream: true}));
+        // .pipe(browserSync.reload({stream: true}));
 });
 
 // SASS
@@ -45,7 +52,7 @@ gulp.task('sass', function() {
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
         .pipe(cssnano({zindex: false}))
         .pipe(gulp.dest('dist/css'))
-        .pipe(browserSync.reload({stream: true}))
+        // .pipe(browserSync.reload({stream: true}))
         //.pipe(gulp.dest('app/css'));
 });
 
@@ -55,7 +62,7 @@ gulp.task('sass-especificos', function() {
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
         .pipe(cssnano({zindex: false}))
         .pipe(gulp.dest('dist/css/views'))
-        .pipe(browserSync.reload({stream: true}))
+        // .pipe(browserSync.reload({stream: true}))
         //.pipe(gulp.dest('app/css'));
 });
 
@@ -67,7 +74,7 @@ gulp.task('js', function() {
 		.pipe(concat('main.js'))
         .pipe(uglify()) 
         .pipe(gulp.dest('dist/js'))
-        .pipe(browserSync.reload({stream: true}));
+        // .pipe(browserSync.reload({stream: true}));
 });
 
 // FONTS
