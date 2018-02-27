@@ -32,7 +32,7 @@ gulp.task('browser-sync', function() {
     gulp.watch('app/**/*').on('change', browserSync.reload);
     
     gulp.watch('app/*.html', ['html']);
-    gulp.watch('app/scss/**/*.scss', ['sass', 'sass-especificos']);
+    gulp.watch('app/scss/**/*.scss', ['sass']);
     gulp.watch('app/js/**/*.js', ['js']);
     gulp.watch('app/fonts/**/*.*', ['fonts']);
     gulp.watch('app/img/**/*.*', ['img']);
@@ -52,16 +52,6 @@ gulp.task('sass', function() {
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
         .pipe(cssnano({zindex: false}))
         .pipe(gulp.dest('dist/css'))
-        // .pipe(browserSync.reload({stream: true}))
-        //.pipe(gulp.dest('app/css'));
-});
-
-gulp.task('sass-especificos', function() {
-    return gulp.src(['app/scss/views/**/*.scss'])
-        .pipe(sass({outputStyle: 'expanded'}).on("error", notify.onError()))
-        .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
-        .pipe(cssnano({zindex: false}))
-        .pipe(gulp.dest('dist/css/views'))
         // .pipe(browserSync.reload({stream: true}))
         //.pipe(gulp.dest('app/css'));
 });
@@ -98,7 +88,7 @@ gulp.task('clear', function(cb) {
 // WATCH
 gulp.task('watch', function() {
     gulp.watch('app/*.html', ['html']);
-    gulp.watch('app/scss/**/*.scss', ['sass', 'sass-especificos']);
+    gulp.watch('app/scss/**/*.scss', ['sass']);
     gulp.watch('app/js/**/*.js', ['js']);
     gulp.watch('app/fonts/**/*.*', ['fonts']);
     gulp.watch('app/img/**/*.*', ['img']);
@@ -112,5 +102,5 @@ gulp.task('finish', function(){
 });
 
 gulp.task('build', function(){
-	runSequence('clear', 'html', 'sass', 'sass-especificos', 'js', 'fonts', 'img', 'browser-sync', 'finish');
+	runSequence('clear', 'html', 'sass', 'js', 'fonts', 'img', 'browser-sync', 'finish');
 });
