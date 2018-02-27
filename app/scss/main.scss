@@ -1,0 +1,20 @@
+// Variáveis
+@import "variables/index.scss";
+
+// Base
+@import "base/index.scss";
+
+// Mixins
+@import "mixins/index.scss";
+
+// Helper classes
+@import "helper classes/index.scss";
+
+// Plugins
+@import "plugins/bootstrap-grid.scss";
+
+// Media Queries
+@import "media queries/index.scss";
+
+// Views
+@import "views/home/index.scss";
