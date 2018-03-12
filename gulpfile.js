@@ -80,6 +80,12 @@ gulp.task('img', function() {
         .pipe(gulp.dest('dist/img'));
 });
 
+// VIDEOS
+gulp.task('video', function() {
+    return gulp.src('app/video/**/*.*')
+        .pipe(gulp.dest('dist/video'));
+});
+
 // CLEAR dist
 gulp.task('clear', function(cb) {
     rimraf('./dist', cb);
@@ -102,5 +108,5 @@ gulp.task('finish', function(){
 });
 
 gulp.task('build', function(){
-	runSequence('clear', 'html', 'sass', 'js', 'fonts', 'img', 'browser-sync', 'finish');
+	runSequence('clear', 'html', 'sass', 'js', 'fonts', 'img', 'video', 'browser-sync', 'finish');
 });
