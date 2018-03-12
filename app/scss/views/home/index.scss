@@ -1,11 +1,22 @@
-.home-background {
-    background-image: url("../../../img/bg.jpg");
-    background-size: cover;
-    height: 100%;
+video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover; 
 }
 
 .tituloBoasVindas{
-    padding-top: 50px;
+    padding-top: 160px;
 }
 
 .modulo {
@@ -31,6 +42,8 @@
 }
 
 .modulo-design, .modulo-web, .modulo-video, .modulo-3d{
+    border-radius: 5px;
+    color: white;
     height: 100%;
     padding: 10px 10px;
 }
