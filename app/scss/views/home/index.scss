@@ -21,7 +21,7 @@ video#bgvid {
 
 .modulo {
     padding-top: 50px;
-    min-height: 500px;
+    min-height: 450px;
 }
 
 .modulo-botao{
@@ -46,6 +46,11 @@ video#bgvid {
     color: white;
     height: 100%;
     padding: 10px 10px;
+}
+
+.modulo-design .modulo-img, .modulo-web .modulo-img, .modulo-video .modulo-img, .modulo-3d .modulo-img{
+    width: 100%;
+    max-width: 120px;
 }
 
 .modulo-design {
