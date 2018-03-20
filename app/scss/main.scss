@@ -4,24 +4,17 @@
 // Mixins
 @import "mixins/index.scss";
 
-// Helper classes
-@import "helper classes/index.scss";
-
-// Plugins
-@import "plugins/bootstrap-4.0.0/bootstrap-reboot.scss";
-@import "plugins/bootstrap-4.0.0/bootstrap-grid.scss";
-@import "plugins/bootstrap-4.0.0/utilities/main.scss";
-@import "plugins/bootstrap-4.0.0/_mixins.scss";
-@import "plugins/bootstrap-4.0.0/_dropdown.scss";
-@import "plugins/bootstrap-4.0.0/_navbar.scss";
-@import "plugins/bootstrap-4.0.0/bootstrap.scss";
-
-// Media Queries
-@import "media queries/index.scss";
+// Bootstrap Normalize e Grid (APENAS)
+@import "plugins/bootstrap.scss";
 
 // Base
 @import "base/index.scss";
 
 // Views
-
 @import "views/home/index.scss";
+
+// Media Queries
+@import "media queries/index.scss";
+
+// Helper classes
+@import "helper classes/index.scss";

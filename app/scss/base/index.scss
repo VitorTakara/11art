@@ -3,35 +3,68 @@ html, body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.navbar-toggler {
-    border: solid 3px white;
-    padding: 1rem 1rem;
-    font-size: 2em;
+.nav {
+  height: 100px;
+  width: 100%;
+  background-color: #4d4d4d;
+  position: relative;
 }
 
-.navbar-toggler span{
-    color: white;
+.nav > .nav-header {
+  display: inline;
 }
 
-.container-fluid {
-    padding: 0;
-    height: 100%;
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px;
 }
 
-.navbar-11art {
-    background: rgba( $color-11art, .7 );
+.nav > .nav-btn,
+.nav .navBtnExit,
+.nav-links-logo,
+.nav-links hr {
+  display: none;
 }
 
-.nav-item a {
-    color: white;
-    padding: 5px;
-    border-bottom: 0px solid white;
-    transition: .1s;
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
 }
 
-.nav-item a:hover {
-    color: white;
-    text-decoration: none;
-    border-bottom: 2px solid white;
-    transition: .1s;
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 40px 10px 10px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+
+.nav > #nav-check {
+  display: none;
+}
+
+nav.strokeEffect .nav-links a{
+  position: relative;
+}
+
+nav.strokeEffect .nav-links a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+  transition: width .5s ease-in-out;
+}
+
+nav.strokeEffect .nav-links a:hover:after {
+  transition: width .5s ease-in-out;
+  width: 100%;
 }

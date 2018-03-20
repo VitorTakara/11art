@@ -10,3 +10,117 @@
 		width: 1440px;
 	}
 }
+
+
+@media screen and ( max-width:750px ) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    padding: 35px 25px 35px 95px;
+  }
+
+  .nav > .nav-btn > label:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .nav > .nav-btn > label > span {
+    display: block;
+	 width: 35px;
+    height: 14px;
+    border-top: 2px solid #eee;
+  }
+
+.nav-btn .nav-menuTitle{
+  position: absolute; 
+  right: 75px; 
+  top:15px; 
+  font-size: 20px;
+  color: white;
+}
+
+  .nav > .nav-links {
+    position: fixed;
+    display: block;
+    z-index: 1;
+    width: 100%;
+    background-color: rgba(20, 20, 20, .9);
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 0px;
+    left: 0px;
+  }
+
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+
+  .nav > #nav-check:not(:checked) + .nav-links {
+  	height: 0;
+    opacity: 0;
+  }
+  
+  .nav > #nav-check:checked + .nav-links {
+    height: 100vh;
+    opacity: 1;
+    overflow-y: auto;
+  }
+
+  .nav .navBtnExit{
+  	padding: 20px 7px 0px 0px;
+  	text-align: right;
+    display: block;
+    width: 100%;
+    height: 80px;
+  }
+
+  .nav .navBtnExit .navBtnExit-label{
+  	font-size: 40px;
+  	color: white;
+  	padding: 7px 16px;
+  	border-radius: 5px;
+   transition: .2s;
+  }
+
+  .nav-links .nav-links-logo{
+   display:inline-block;
+   position:absolute; 
+   top: 10px; 
+   left: 10px;
+  }
+
+  .nav-links hr{
+   display:inline-block;
+   border-color: rgba(255,255,255,0.4);
+  }
+
+  .nav .navBtnExit .navBtnExit-label:hover{
+    transition: .2s;
+    cursor: pointer;
+    background: #4d4d4d;
+  }
+
+  nav.strokeEffect .nav-links a:after {
+	display:none;
+  }
+  
+  nav.strokeEffect .nav-links a {
+	padding: 30px 15px!important;
+  }
+
+  nav.strokeEffect .nav-links a:hover {
+	background: $color-11art!important;
+	transition: .2s;
+	color: black;
+  }
+
+}

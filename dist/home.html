@@ -9,18 +9,48 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
     <title>11ART - Home</title>
 </head>
-<body>
+<body style="background: black">
 
-    <video playsinline autoplay muted loop poster="img/bg.jpg" id="bgvid">
+    <!--<video playsinline autoplay muted loop poster="img/bg.jpg" id="bgvid">
         <source src="video/background-home.webm" type="video/webm">
         <source src="video/background-home.mp4" type="video/mp4">
-    </video>
+    </video>-->
     
 
+        <nav class="nav strokeEffect">
+          <div class="nav-header">
+            <div class="nav-title">
+              <a href="#"> <img src="img/11Art_White.png" width="50" height="80" alt=""> </a>
+            </div>
+          </div>
+          <div class="nav-btn">
+            <label for="nav-check">
+              <p  class="nav-menuTitle">Menu</p>
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+          </div>
+          <input type="checkbox" id="nav-check">
+          <div class="nav-links">
+            <img class="nav-links-logo" src="img/11Art_White.png" width="50" height="80" alt="">
+            <div class="navBtnExit">
+            <label class="navBtnExit-label" for="nav-check">Fechar X</label>
+            </div>
+            <hr>
+            <a href="#">HOME</a>
+            <a href="#">SERVIÇOS</a>
+            <a href="#">PORTFOLIO</a>
+            <a href="#">SOBRE NÓS</a>
+            <a class="mtn-4" href="#">CONTATO</a>
+          </div>
+        </nav>
+        
     <main class="container-fluid">
-        <!-- [ START ] CONTAINER FUILD -->
+
+
+<!--        
         <nav class="navbar fixed-top navbar-expand-lg navbar-11art">
-            <!-- [ START ] NAVBAR -->
             <div class="container">
                 <a class="navbar-brand" href="#"> <img src="img/11Art_White.png" width="50" height="80" alt=""> </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbartoogle" aria-controls="navbartoogle" aria-expanded="false" aria-label="Toggle navigation"><span>☰</span></button>
@@ -34,8 +64,12 @@
                     </ul>
                 </div>
             </div>
-            <!-- [ END ] NAVBAR -->
         </nav>
+-->
+
+
+
+
 
         <section class="home-background">
             <!-- [ START ] HOME MODULOS -->
@@ -43,36 +77,36 @@
                 <h1 class="text-center text-white tituloBoasVindas"><span class="font-weight-bold">Bem vindo!</span> Conta pra gente, do que você precisa? <span class="font-weight-bold">;)</span></h1>
 
                 <div class="row">
-                    <div class="col-xl-3 col-lg-3 col-md-6 modulo">
+                    <div class="col-lg-3 col-md-6 modulo">
                         <div class="modulo-design text-center">
-                            <img class="modulo-img mt-5 mb-4" src="img/design.png">
+                            <img class="modulo-img mt-10 mb-7" src="img/design.png">
                             <h3>Design Gráfico</h3>
                             <p>BANNER, FYLER, MIDIAS SOCIAIS, IMPRESSOS...</p>
                             <button class="modulo-botao">CONTINUAR</button>
                         </div>
                     </div>
                     
-                    <div class="col-xl-3 col-lg-3 col-md-6 modulo">
+                    <div class="col-lg-3 col-md-6 modulo">
                         <div class="modulo-web text-center">
-                            <img class="modulo-img mt-5 mb-4" src="img/web.png">
+                            <img class="modulo-img mt-10 mb-7" src="img/web.png">
                             <h3>Website</h3>
                             <p>COMPLETO, REPONSIVO, RÁPIDO, SEO, ACESSÍVEL...</p>
                             <button class="modulo-botao">CONTINUAR</button>
                         </div>
                     </div>
 
-                    <div class="col-xl-3 col-lg-3 col-md-6 modulo">
+                    <div class="col-lg-3 col-md-6 modulo">
                         <div class="modulo-video text-center">
-                            <img class="modulo-img mt-5 mb-4" src="img/video.png">
+                            <img class="modulo-img mt-10 mb-7" src="img/video.png">
                             <h3>Produção Vídeo</h3>
                             <p>EDIÇÃO, MONTAGEM, CLIP, FINALIZAÇÃO, EFEITOS...</p>
                             <button class="modulo-botao">CONTINUAR</button>
                         </div>
                     </div>
 
-                    <div class="col-xl-3 col-lg-3 col-md-6 modulo">
-                        <div class="modulo-3d text-center">    
-                            <img class="modulo-img mt-5 mb-4" src="img/3d.png">
+                    <div class="col-lg-3 col-md-6 modulo">
+                        <div class="modulo-3d text-center">  
+                            <img class="modulo-img mt-10 mb-7" src="img/3d.png">
                             <h3 class="titulo">Modelagem 3D</h3>
                             <p>PERSONAGEM, CENÁRIO, AMBIENTE, OBJETOS...</p>
                             <button class="modulo-botao">CONTINUAR</button>
