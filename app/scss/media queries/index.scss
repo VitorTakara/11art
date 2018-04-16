@@ -13,32 +13,32 @@
 
 
 @media screen and ( max-width:750px ) {
-  .nav > .nav-btn {
+  .nav > .nav-mobileBtn {
     display: inline-block;
     position: absolute;
     right: 0px;
     top: 0px;
   }
 
-  .nav > .nav-btn > label {
+  .nav > .nav-mobileBtn > label {
     display: inline-block;
     width: 150px;
     height: 100px;
     padding: 35px 25px 35px 95px;
   }
 
-  .nav > .nav-btn > label:hover {
+  .nav > .nav-mobileBtn > label:hover {
     background-color: rgba(0, 0, 0, 0.3);
   }
 
-  .nav > .nav-btn > label > span {
+  .nav > .nav-mobileBtn > label > span {
     display: block;
 	 width: 35px;
     height: 14px;
     border-top: 2px solid #eee;
   }
 
-.nav-btn .nav-menuTitle{
+.nav-mobileBtn .nav-mobileBtn-toogle-text{
   position: absolute; 
   right: 75px; 
   top:15px; 
@@ -64,18 +64,18 @@
     width: 100%;
   }
 
-  .nav > #nav-check:not(:checked) + .nav-links {
+  .nav > #nav-mobileBtn-toogle:not(:checked) + .nav-links {
   	height: 0;
     opacity: 0;
   }
   
-  .nav > #nav-check:checked + .nav-links {
+  .nav > #nav-mobileBtn-toogle:checked + .nav-links {
     height: 100vh;
     opacity: 1;
     overflow-y: auto;
   }
 
-  .nav .navBtnExit{
+  .nav .nav-links-btnFechar{
   	padding: 20px 7px 0px 0px;
   	text-align: right;
     display: block;
@@ -83,7 +83,7 @@
     height: 80px;
   }
 
-  .nav .navBtnExit .navBtnExit-label{
+  .nav .nav-links-btnFechar label{
   	font-size: 40px;
   	color: white;
   	padding: 7px 16px;
@@ -103,7 +103,7 @@
    border-color: rgba(255,255,255,0.4);
   }
 
-  .nav .navBtnExit .navBtnExit-label:hover{
+  .nav .nav-links-btnFechar label:hover{
     transition: .2s;
     cursor: pointer;
     background: #4d4d4d;

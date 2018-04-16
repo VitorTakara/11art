@@ -21,8 +21,8 @@ html, body {
   padding: 10px;
 }
 
-.nav > .nav-btn,
-.nav .navBtnExit,
+.nav > .nav-mobileBtn,
+.nav .nav-links-btnFechar,
 .nav-links-logo,
 .nav-links hr {
   display: none;
@@ -42,7 +42,7 @@ html, body {
 }
 
 
-.nav > #nav-check {
+.nav > #nav-mobileBtn-toogle {
   display: none;
 }
 
