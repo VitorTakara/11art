@@ -1,70 +1,65 @@
-video#bgvid { 
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    background: url(polina.jpg) no-repeat;
-    background-size: cover; 
+video#bgvid {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   min-width: 100%;
+   min-height: 100%;
+   width: auto;
+   height: auto;
+   z-index: -100;
+   -ms-transform: translateX(-50%) translateY(-50%);
+   -moz-transform: translateX(-50%) translateY(-50%);
+   -webkit-transform: translateX(-50%) translateY(-50%);
+   transform: translateX(-50%) translateY(-50%);
+   background: url(polina.jpg) no-repeat;
+   background-size: cover;
 }
 
-.tituloBoasVindas{
-    padding-top: 160px;
+.tituloBoasVindas {
+   padding-top: 160px;
 }
 
 .modulo {
-    padding-top: 50px;
-    min-height: 450px;
-}
-
-.modulo-botao{
-    width: 90%;
-    background: $color-modulo-botao;
-    padding: 15px 10px;
-    color: white;
-    border: 2px solid #fff;
-    border-radius: 5px;
-    transition: .2s;
-}
-
-.modulo-botao:hover{
-    background: white;
-    color: $color-11art;
-    border-radius: 5px;
-    transition: .2s;
-}
-
-.modulo-design, .modulo-web, .modulo-video, .modulo-3d{
-    border-radius: 5px;
-    color: white;
-    height: 100%;
-    padding: 10px 10px;
-}
-
-.modulo-design .modulo-img, .modulo-web .modulo-img, .modulo-video .modulo-img, .modulo-3d .modulo-img{
-    width: 100%;
-    max-width: 120px;
-}
-
-.modulo-design {
-    background: $color-modulo-design;
-}
-
-.modulo-web {
-    background: $color-modulo-web;
-}
-
-.modulo-video {
-    background: $color-modulo-video;
-}
-
-.modulo-3d {
-    background: $color-modulo-3d;
+   padding-top: 50px;
+   min-height: 450px;
+   &-img {
+      width: 100%;
+      max-width: 120px;
+   }
+   &-botao {
+      width: 90%;
+      background: $color-modulo-botao;
+      padding: 15px 10px;
+      color: white;
+      border: 2px solid #fff;
+      border-radius: 5px;
+      transition: .2s;
+      &:hover {
+         background: white;
+         color: $color-11art;
+         border-radius: 5px;
+         transition: .2s;
+      }
+   }
+   &-design,
+   &-web,
+   &-video,
+   &-3d {
+      border-radius: 5px;
+      color: white;
+      height: 100%;
+      padding: 10px 10px;
+   }
+   &-design {
+      background: $color-modulo-design;
+   }
+   &-web {
+      background: $color-modulo-web;
+   }
+   &-video {
+      background: $color-modulo-video;
+   }
+   &-3d {
+      background: $color-modulo-3d;
+   }
 }

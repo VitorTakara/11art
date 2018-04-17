@@ -1,70 +1,63 @@
-html, body {
-    height: 100%;
-    font-family: 'Montserrat', sans-serif;
+html,
+body {
+   height: 100%;
+   font-family: 'Montserrat', sans-serif;
 }
 
 .nav {
-  height: 100px;
-  width: 100%;
-  background-color: #4d4d4d;
-  position: relative;
+   height: 100px;
+   width: 100%;
+   background-color: #4d4d4d;
+   position: relative;
+   &-header {
+      display: inline;
+      &-title {
+         display: inline-block;
+         font-size: 22px;
+         color: #fff;
+         padding: 10px;
+      }
+   }
+
+   &-mobileBtn {
+      display: none;
+   }
+   
+   &-links {
+      float: right;
+      font-size: 18px;
+      a {
+         display: inline-block;
+         padding: 40px 10px 10px 10px;
+         text-decoration: none;
+         color: #efefef;
+         position: relative;
+      }
+      a:after {
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         right: 0;
+         margin: auto;
+         width: 0%;
+         content: '.';
+         color: transparent;
+         background: #aaa;
+         height: 1px;
+         transition: width .5s ease-in-out;
+      }
+      a:hover:after {
+         transition: width .5s ease-in-out;
+         width: 100%;
+      }
+      &-btnFechar,
+      &-logo,
+      hr {
+         display: none;
+      }
+   }
 }
 
-.nav > .nav-header {
-  display: inline;
-}
-
-.nav > .nav-header > .nav-title {
-  display: inline-block;
-  font-size: 22px;
-  color: #fff;
-  padding: 10px;
-}
-
-.nav > .nav-mobileBtn,
-.nav .nav-links-btnFechar,
-.nav-links-logo,
-.nav-links hr {
-  display: none;
-}
-
-.nav > .nav-links {
-  display: inline;
-  float: right;
-  font-size: 18px;
-}
-
-.nav > .nav-links > a {
-  display: inline-block;
-  padding: 40px 10px 10px 10px;
-  text-decoration: none;
-  color: #efefef;
-}
-
-
-.nav > #nav-mobileBtn-toogle {
-  display: none;
-}
-
-nav.strokeEffect .nav-links a{
-  position: relative;
-}
-
-nav.strokeEffect .nav-links a:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: '.';
-  color: transparent;
-  background: #aaa;
-  height: 1px;
-  transition: width .5s ease-in-out;
-}
-
-nav.strokeEffect .nav-links a:hover:after {
-  transition: width .5s ease-in-out;
-  width: 100%;
+#nav-mobileBtnToogle {
+   display: none;
 }
