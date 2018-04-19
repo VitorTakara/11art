@@ -1,0 +1,83 @@
+.button-11art {
+  display: block;
+  margin: 1em;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+  background: none;
+  border: 3px solid white;
+  overflow: hidden;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  width: 90%;
+  background: $color-modulo-botao;
+  padding: 15px 10px;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 100%;
+    left: 0;
+    z-index: -1;
+    transition: transform 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+  }
+
+  &:hover::after,
+  &:hover::before {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  &:hover::after {
+    -webkit-transition-delay: 0.175s;
+    transition-delay: 0.175s;
+  }
+
+  &::after {
+    background: rgb(255, 255, 255);
+  }
+
+  &-design {
+    &:hover {
+      color: darken($color-modulo-design, 20%);
+    }
+    &::before {
+      background: darken($color-modulo-design, 20%);
+    }
+  }
+
+  &-web {
+    &:hover {
+      color: darken($color-modulo-web, 20%);
+    }
+    &::before {
+      background: darken($color-modulo-web, 20%);
+    }
+  }
+
+  &-video {
+    &:hover {
+      color: darken($color-modulo-video, 20%);
+    }
+    &::before {
+      background: darken($color-modulo-video, 20%);
+    }
+  }
+
+  &-3d {
+    &:hover {
+      color: darken($color-modulo-3d, 20%);
+    }
+    &::before {
+      background: darken($color-modulo-3d, 20%);
+    }
+  }
+}
