@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/views/home/index.css">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+   <title>11ART - Home</title>
+
+   <style>
+   .designPanel{
+      text-align: center;
+      padding: 25px 0;
+      min-height: 500px;
+      display: flex;
+      align-items: center;
+   }
+
+   .designPanel-content-left{
+      align-content: center;
+   }
+
+   .designPanel-content-left-title{
+      font-size: 3em;
+   }
+
+   .designPanel-content-right{
+      align-content: center;
+   }
+
+   .designPanel-content-right-description{
+      font-size: 2em;
+   }
+   
+   </style>
+</head>
+
+<body style="background: rgb(236, 236, 236)">
+
+   <nav class="nav strokeEffect" style="background:rgb(76, 217, 100)">
+      <div class="nav-header">
+         <div class="nav-header-title">
+            <a href="#">
+               <img src="img/11Art_White.png" width="50" height="80" alt=""> </a>
+         </div>
+      </div>
+      <div class="nav-mobileBtn">
+         <label for="nav-mobileBtnToogle">
+            <p class="nav-mobileBtn-toogleText">Menu</p>
+            <span></span>
+            <span></span>
+            <span></span>
+         </label>
+      </div>
+      <input type="checkbox" id="nav-mobileBtnToogle">
+      <div class="nav-links">
+         <img class="nav-links-logo" src="img/11Art_White.png" width="50" height="80" alt="">
+         <div class="nav-links-btnFechar">
+            <label for="nav-mobileBtnToogle">Fechar X</label>
+         </div>
+         <hr>
+         <a href="#">HOME</a>
+         <a href="#">SERVIÇOS</a>
+         <a href="#">PORTFOLIO</a>
+         <a href="#">SOBRE NÓS</a>
+         <a class="mtn-4" href="#">CONTATO</a>
+      </div>
+   </nav>
+
+   <div class="container" style="background: white">
+      <article class="designPanel row">
+         <div class="col-md-12 col-xs-12 designPanel-content">
+            <div class="designPanel-content-left col-md-5 col-lg-3 col-lg-offset-1 col-xs-12 col-sm-12">
+               <img src="https://blog.object23.fr/wp-content/uploads/2015/06/Bright_lightbulb_256.png">
+               <h1 class="designPanel-content-left-title">Design Gráfico</h1>
+            </div>
+            <div class="designPanel-content-right col-md-7 col-lg-7 col-xs-12 col-sm-12">
+               <p class="designPanel-content-right-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque iste aliquam est saepe enim beatae, laborum ullam voluptatem sit velit?</p>
+               <button role="button" type="button">Como funciona</button>
+               <button role="button" type="button">Nossos trabalhos</button>
+               <button role="button" type="button">Vamos conversar? ;)</button>
+            </div>
+         </div>
+      </article>
+   </div>
+   <main id="view">
+
+   </main>
+
+   <!-- SCRIPTS -->
+   <script src="./js/main.js"></script>
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>

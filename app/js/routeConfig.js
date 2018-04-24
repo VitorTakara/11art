@@ -19,18 +19,19 @@ router = new Navigo(null, true, '#!');
 router.on({
   // 'view' is the id of the div element inside which we render the HTML
   'home': function home() {
-    loadHTML('../home.html', 'view');
+   loadHTML('../home.html', 'view');
+   loadHTML('../design.html', 'view');
   }
 });
 
 // set the default route
 router.on(function () {
-  $id('view').innerHTML = '<h2>Here defou</h2>';
+  $id('view').innerHTML = '<h5>Here defou</h5>';
 });
 
 // set the 404 route
 router.notFound(function (query) {
-  $id('view').innerHTML = '<h3>NotFound</h3>';
+  $id('view').innerHTML = '<h1>NotFound</h1>';
 });
 
 router.resolve();
