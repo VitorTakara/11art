@@ -9,6 +9,7 @@
 
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
+	babel = require('gulp-babel');
     prefix = require('gulp-autoprefixer'),
     cssnano = require('gulp-cssnano'),
     uglify = require('gulp-uglify'),
@@ -59,12 +60,12 @@ gulp.task('sass', function() {
 // JS
 
 gulp.task('js', function() {
-    return gulp.src(['app/js/**/*.js'])
-        .pipe(rigger())
+    return gulp.src(['app/js/navigo.min.js','app/js/routeConfig.js' ])
+      .pipe(rigger())
 		.pipe(concat('main.js'))
-        .pipe(uglify()) 
-        .pipe(gulp.dest('dist/js'))
-        // .pipe(browserSync.reload({stream: true}));
+      .pipe(uglify()) 
+      .pipe(gulp.dest('dist/js'))
+      // .pipe(browserSync.reload({stream: true}));
 });
 
 // FONTS
