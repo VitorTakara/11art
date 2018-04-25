@@ -1,0 +1,22 @@
+.designPanel{
+   padding: 25px 25px;
+   height: 500px;
+   display: flex;
+   align-items: center;
+}
+
+.designPanel-left{
+   align-content: center;
+}
+
+.designPanel-left-title{
+   font-size: 3em;
+}
+
+.designPanel-right{
+   align-content: center;
+}
+
+.designPanel-right-description{
+   font-size: 2em;
+}

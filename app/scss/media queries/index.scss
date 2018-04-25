@@ -1,3 +1,10 @@
+@media screen and (max-width: 1200px) {
+   .btn{
+      width: 30%;
+      float: left;
+   }
+}
+
 @media screen and (min-width: 1440px) {
   .container {
     width: 1200px;
@@ -10,8 +17,23 @@
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
+
+  // design.html
+
+  .designPanel{
+     display: inline-block;
+     height: 100%;
+  }
+
   // base index.html
+
+  .btn{
+      margin-top:10px;
+      width: 100%;
+      margin-left:0;
+   }
+
   .nav {
     &-mobileBtn {
       display: inline-block;

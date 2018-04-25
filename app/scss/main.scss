@@ -13,9 +13,11 @@
 
 // Views
 @import "views/home/index.scss";
+@import "views/design/index.scss";
+
+// Helper classes
+@import "helper classes/index.scss";
 
 // Media Queries
 @import "media queries/index.scss";
 
-// Helper classes
-@import "helper classes/index.scss";

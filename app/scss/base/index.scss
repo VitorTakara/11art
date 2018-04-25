@@ -73,3 +73,37 @@ body {
 #nav-mobileBtnToogle {
   display: none;
 }
+
+.btn{
+   border: none;
+   background: none;
+   padding: 10px 20px;
+   font-size: 1.4em;
+   font-weight: 500;
+   border-radius: 3px;
+   border: 2px solid;
+   color: white;
+   transition: .3s;
+}
+
+// Design
+
+.btn-fill-design{
+   background: $color-design;
+   border-color: $color-design;
+}
+
+.btn-fill-design:hover{
+   background: darken($color-design, 10%);
+   border-color: darken($color-design, 10%);
+}
+
+.btn-outline-design{
+   border-color: $color-design;
+   color: darken($color-design, 10%);
+}
+
+.btn-outline-design:hover{
+   background: $color-design;
+   color: white;
+}
