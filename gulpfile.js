@@ -19,6 +19,7 @@ var gulp = require("gulp"),
   notify = require("gulp-notify"),
   runSequence = require("run-sequence"),
   rigger = require("gulp-rigger"),
+  sourcemaps = require('gulp-sourcemaps'),
   rimraf = require("rimraf");
 
 // BROWSERSYNC
@@ -63,9 +64,11 @@ gulp.task("sass", function() {
 gulp.task("js", function() {
   return gulp
     .src(["app/js/navigo.min.js", "app/js/routeConfig.js"])
+    .pipe(sourcemaps.init())
     .pipe(rigger())
     .pipe(concat("main.js"))
     .pipe(uglify())
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest("dist/js"));
   // .pipe(browserSync.reload({stream: true}));
 });

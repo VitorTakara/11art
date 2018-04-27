@@ -1,7 +1,17 @@
 @media screen and (max-width: 1200px) {
+   .boxComoFunciona-ml{
+      margin-left:0;
+   }
+
    .btn{
       width: 30%;
       float: left;
+   }
+}
+
+@media screen and (min-width: 1200px) {
+   .boxComoFunciona-ml{
+      margin-left: 12.5%;
    }
 }
 
@@ -20,6 +30,9 @@
 @media screen and (max-width: 768px) {
 
   // design.html
+  .boxComoFunciona-circle{
+     margin: 30px auto 0 auto;
+  }
 
   .designPanel{
      display: inline-block;
