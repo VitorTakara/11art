@@ -147,12 +147,21 @@ body {
    &-form{
       &-btnEnviar{
          float: right;
-         margin-left: 10px; 
+         margin-left: 10px;
       }
    }
 }
 
 .boxComoFunciona{
+   &-mark{
+      color: white;
+      padding: 2px 8px; 
+
+      &-design{
+         background: $color-design;
+      }
+   }
+
    &-title{
       font-size: 2.5em;
       padding: 20px 0 10px 0;
@@ -225,17 +234,14 @@ body {
 
       &-design{
          border-color: $color-design;
-         color: darken($color-design, 20%);
+            
       }
    }
 
    &-label{
       font-size: 1.6em; 
       font-weight: 500;
-
-      &-design{
-         color: darken($color-design, 20%);
-      }
+      color: $color-primary;  
    }
 }
 

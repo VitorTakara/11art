@@ -48,15 +48,15 @@
    <div class="container" style="background: white">
       <!-- [ START ] Modulo -->
       <article class="row">
-         <div class="col-md-12 col-xs-12 panel">
-            <div class="panel-left col-md-5 col-lg-3 col-lg-offset-1 col-xs-12 col-sm-12 text-center">
+         <div class="col-md-12 col-xs-12 panel animated">
+            <div class="panel-left col-md-5 col-lg-3 col-lg-offset-1 col-xs-12 col-sm-12 text-center ">
                <img class="panel-left-img" src="./img/design_c.svg">
                <h1 class="panel-left-title mb-0">Design Gráfico</h1>
             </div>
             <div class="panel-right col-md-7 col-lg-7 col-xs-12 col-sm-12">
                <p class="panel-right-description mt-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ratione reiciendis totam odio, quo deleniti beatae eaque expedita vero ea, odit est officiis temporibus ad.</p>
                <div class="row">
-                  <div class="col-md-12">
+                  <div class="col-md-12 animated">
                      <button class="btn btn-outline-design" role="button" onclick="smoothScroll('container_comoFunciona')" type="button">Como funciona</button>
                      <button class="btn btn-outline-design ml-2" role="button" onclick="smoothScroll('container_nossosTrabalhos')" type="button">Nossos trabalhos</button>
                      <button class="btn btn-fill-design ml-2" role="button" onclick="smoothScroll('container_vamosConversar')" type="button">Vamos conversar?</button>
@@ -70,14 +70,14 @@
       <hr id="container_comoFunciona">  <!-- Anchor -->
 
       <!-- [ START ] Como Funciona -->
-      <div class="row">
+      <div class="row pb-8 pt-5">
          <article class="boxComoFunciona">
             <div class="text-center">
-               <h2 class="boxComoFunciona-title">Como funciona? É bem simples!</h2>
+               <h2 class="boxComoFunciona-title animated pb-8">Como funciona? <span class="boxComoFunciona-mark boxComoFunciona-mark-design">É bem simples!</span></h2>
             </div>
 
-            <div class="col-lg-3 col-md-4 boxComoFunciona-ml">
-               <div class="boxComoFunciona-circle">
+            <div class="col-lg-3 col-md-4 boxComoFunciona-ml comoFunciona">
+               <div class="boxComoFunciona-circle ">
                   <i class="boxComoFunciona-circle-img fa fa-5x fa-smile-o"></i>
                </div>
                <div class="boxComoFunciona-description">
@@ -86,7 +86,7 @@
                </div>
             </div>
 
-            <div class="col-lg-3 col-md-4">
+            <div class="col-lg-3 col-md-4 comoFunciona">
                <div class="boxComoFunciona-circle">
                   <i class="boxComoFunciona-circle-img fa fa-5x fa-pencil"></i>
                </div>
@@ -96,7 +96,7 @@
                </div>
             </div>
 
-            <div class="col-lg-3 col-md-4">
+            <div class="col-lg-3 col-md-4 comoFunciona">
                <div class="boxComoFunciona-circle">
                   <i class="boxComoFunciona-circle-img fa fa-5x fa-star-o"></i>
                </div>
@@ -112,11 +112,11 @@
       <hr id="container_nossosTrabalhos">  <!-- Anchor -->
 
       <!-- [ START ] Nossos Trabalhos -->
-      <div class="row">
-         <div class="col-md-12 pb-6">
+      <div class="row animated">
+         <div class="col-md-12 pb-6 pt-5">
             <article class="boxNossosTrabalhos">
                <div class="text-center">
-                  <h2 class="boxNossosTrabalhos-title">Alguns de nossos trabalhos!</h2>
+                  <h2 class="boxNossosTrabalhos-title">Alguns de <span class="boxComoFunciona-mark boxComoFunciona-mark-design">nossos trabalhos!</span></h2>
                </div>
 
                <div class="gallery">
@@ -171,11 +171,11 @@
       <hr id="container_vamosConversar">  <!-- Anchor -->
 
       <!-- [ START ] Vamos Conversar? -->
-      <div class="row">
+      <div class="row animated">
          <div class="col-md-12 pb-8">
             <article class="boxVamosConversar">
                <div class="text-center">
-                     <h2 class="boxVamosConversar-title">Vamos Conversar? ;)</h2>
+                     <h2 class="boxVamosConversar-title">Vamos <span class="boxComoFunciona-mark boxComoFunciona-mark-design">Conversar?</span> ;)</h2>
                </div>
                <form class="boxVamosConversar-form">
                   <div class="col-lg-offset-1 col-lg-3 col-md-5 text-center">
@@ -183,17 +183,17 @@
                   </div>
                   <div class="col-lg-7 col-md-7 col-xs-12">
                      <div class="formControl">
-                        <label class="formControl-label formControl-label-design">Nome</label>
+                        <label class="formControl-label">Nome</label>
                         <input required class="formControl-input formControl-input-design" placeholder="Ex: Joãozinho"/>
                      </div>
 
                      <div class="formControl">
-                           <label class="formControl-label formControl-label-design">Email</label>
+                           <label class="formControl-label">Email</label>
                            <input required type="email" class="formControl-input formControl-input-design" placeholder="seuemail@email.com"/>
                      </div>
 
                      <div class="formControl">
-                           <label class="formControl-label formControl-label-design">Celular</label>
+                           <label class="formControl-label">Celular</label>
                            <input required class="formControl-input formControl-input-design" placeholder="(00) 00000-0000"/>
                      </div>
 
@@ -264,9 +264,11 @@
    <!-- SCRIPTS -->
    <script src="./js/main.js"></script>
    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
    crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/3.4.0/scrollreveal.min.js"></script>
+   
    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" crossorigin="anonymous"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" crossorigin="anonymous"></script>
 
@@ -483,7 +485,12 @@
       } else throw new Error("Variável 'location' não passada no evento de 'click'");
    }
 
-   // execute above function
+   // init scroll reveal
+   window.sr = ScrollReveal();
+   sr.reveal('.animated', {duration: 1500});
+   sr.reveal('.comoFunciona', {duration: 1000}, 500);
+
+   // init galeria
    initPhotoSwipeFromDOM('.gallery');
 
    </script>
