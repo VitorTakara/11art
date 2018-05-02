@@ -63,11 +63,11 @@ gulp.task("sass", function() {
 
 gulp.task("js", function() {
   return gulp
-    .src(["app/js/navigo.min.js", "app/js/routeConfig.js"])
+    .src(["app/js/navigo.min.js", "app/js/script.js", "app/js/routeConfig.js"])
     .pipe(sourcemaps.init())
     .pipe(rigger())
     .pipe(concat("main.js"))
-    .pipe(uglify())
+   // .pipe(uglify())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest("dist/js"));
   // .pipe(browserSync.reload({stream: true}));

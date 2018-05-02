@@ -6,59 +6,64 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <link rel="stylesheet" href="css/main.css">
-   <link rel="stylesheet" href="css/views/home/index.css">
    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
-   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css">
    <title>11ART - Home</title>
 </head>
 
-<body style="background: black">
-
-   <video playsinline autoplay muted loop poster="img/bg.jpg" class="homeBGVideo">
-      <source src="video/background-home.webm" type="video/webm">
-      <source src="video/background-home.mp4" type="video/mp4">
-   </video>
-
-   <nav class="nav strokeEffect">
-      <div class="nav-header">
-         <div class="nav-header-title">
-            <a href="#">
-               <img src="img/11Art_White.png" width="50" height="80" alt=""> </a>
-         </div>
-      </div>
-      <div class="nav-mobileBtn">
-         <label for="nav-mobileBtnToogle">
-            <p class="nav-mobileBtn-toogleText">Menu</p>
-            <span></span>
-            <span></span>
-            <span></span>
-         </label>
-      </div>
-      <input type="checkbox" id="nav-mobileBtnToogle">
-      <div class="nav-links">
-         <img class="nav-links-logo" src="img/11Art_White.png" width="50" height="80" alt="">
-         <div class="nav-links-btnFechar">
-            <label for="nav-mobileBtnToogle">Fechar X</label>
-         </div>
-         <hr>
-         <a href="#">HOME</a>
-         <a href="#">SERVIÇOS</a>
-         <a href="#">PORTFOLIO</a>
-         <a href="#">SOBRE NÓS</a>
-         <a class="mtn-4" href="#">CONTATO</a>
-      </div>
-   </nav>
+<body style="background: white">
 
    <main id="view">
       
    </main>
 
-   <!-- SCRIPTS -->
-   <script src="./js/main.js"></script>
-   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"></script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"></script>
+   <!-- PhotoSwipe -->
+   <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+         <div class="pswp__bg"></div>
+         <div class="pswp__scroll-wrap">
+            <div class="pswp__container">
+               <div class="pswp__item"></div>
+               <div class="pswp__item"></div>
+               <div class="pswp__item"></div>
+            </div>
+            <div class="pswp__ui pswp__ui--hidden">
+               <div class="pswp__top-bar">
+                     <div class="pswp__counter"></div>
+                     <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                     <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                           <div class="pswp__preloader__cut">
+                           <div class="pswp__preloader__donut"></div>
+                           </div>
+                        </div>
+                     </div>
+               </div>
+               <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                     <div class="pswp__share-tooltip"></div> 
+               </div>
+               <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+               </button>
+               <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+               </button>
+               <div class="pswp__caption">
+                     <div class="pswp__caption__center"></div>
+               </div>
+               </div>
+            </div>
+      </div>
+
+<!-- SCRIPTS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/3.4.0/scrollreveal.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" crossorigin="anonymous"></script>
+<script src="./js/main.js"></script>
 </body>
 
 </html>
