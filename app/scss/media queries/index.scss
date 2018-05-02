@@ -1,3 +1,172 @@
+
+@media screen and (max-width: 320px){
+   .gallery figure {
+      height: 150px; 
+    }
+}
+
+
+@media screen and (min-width: 320px){
+   .gallery figure {
+      height: 170px; 
+    }
+}
+
+@media screen and (min-width: 370px){
+   .gallery figure {
+      height: 200px; 
+    }
+}
+
+@media screen and (min-width: 450px){
+   .gallery figure {
+      height: 250px; 
+    }
+}
+
+@media screen and (min-width: 600px){
+   .gallery figure {
+      height: 160px; 
+    }
+}
+
+@media screen and (max-width: 600px){
+   .hidden-xs{
+      display:none;
+   }
+
+   .panel{
+      display: inline-block;
+   }
+}
+
+@media screen and (min-width: 700px){
+   .gallery figure {
+      height: 180px; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+   // design.html
+   .boxComoFunciona-circle{
+      margin: 30px auto 0 auto;
+   }
+ 
+   .designPanel{
+      display: inline-block;
+      height: 100%;
+   }
+ 
+   // base index.html
+ 
+   .btn{
+       margin-top:10px;
+       width: 100% !important;
+       margin-left:0;
+    }
+ 
+   .nav {
+     &-mobileBtn {
+       display: inline-block;
+       position: absolute;
+       right: 0px;
+       top: 0px;
+       label {
+         display: inline-block;
+         width: 150px;
+         height: 100px;
+         padding: 35px 25px 35px 95px;
+         span {
+           display: block;
+           width: 35px;
+           height: 14px;
+           border-top: 2px solid #eee;
+         }
+       }
+       label:hover {
+         background-color: rgba(0, 0, 0, 0.13);
+       }
+       &-toogleText {
+         position: absolute;
+         right: 75px;
+         top: 15px;
+         font-size: 20px;
+         color: white;
+       }
+     }
+     &-links {
+       position: fixed;
+       display: block;
+       z-index: 2;
+       width: 100%;
+       background-color: rgba(20, 20, 20, 0.9);
+       height: 0px;
+       transition: all 0.3s ease-in;
+       overflow-y: hidden;
+       top: 0px;
+       left: 0px;
+       &-btnFechar {
+         padding: 20px 7px 0px 0px;
+         text-align: right;
+         display: block;
+         width: 100%;
+         height: 80px;
+         &-logo {
+           display: inline-block;
+           position: absolute;
+           top: 10px;
+           left: 10px;
+         }
+         label {
+           font-size: 40px;
+           color: white;
+           padding: 7px 16px;
+           border-radius: 5px;
+         }
+         label:hover {
+           cursor: pointer;
+           background: #4d4d4d;
+         }
+       }
+       a {
+         display: block;
+         width: 100%;
+         padding: 30px 15px !important;
+       }
+       a:hover {
+         background: $color-11art !important;
+         font-weight: bold;
+         color: white;
+       }
+       a:after {
+         display: none;
+       }
+       hr {
+         display: inline-block;
+         border-color: rgba(255, 255, 255, 0.4);
+       }
+     }
+   }
+ 
+   #nav-mobileBtnToogle:not(:checked) + .nav-links {
+     height: 0;
+     opacity: 0;
+   }
+ 
+   #nav-mobileBtnToogle:checked + .nav-links {
+     height: 100vh;
+     opacity: 1;
+     overflow-y: auto;
+   }
+ }
+
+@media (min-width: 996px) {
+   .gallery figure {
+      height: 230px;
+    }
+}
+
 @media screen and (max-width: 1200px) {
    .boxComoFunciona-ml{
       margin-left:0;
@@ -7,13 +176,22 @@
       width: 30%;
       float: left;
    }
+   
+   .boxVamosConversar-form-btnEnviar{
+      float: right;
+   }
 }
 
 @media screen and (min-width: 1200px) {
    .boxComoFunciona-ml{
       margin-left: 12.5%;
    }
+
+   .gallery figure {
+      height: 280px; 
+    }
 }
+
 
 @media screen and (min-width: 1440px) {
   .container {
@@ -27,117 +205,3 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-
-  // design.html
-  .boxComoFunciona-circle{
-     margin: 30px auto 0 auto;
-  }
-
-  .designPanel{
-     display: inline-block;
-     height: 100%;
-  }
-
-  // base index.html
-
-  .btn{
-      margin-top:10px;
-      width: 100%;
-      margin-left:0;
-   }
-
-  .nav {
-    &-mobileBtn {
-      display: inline-block;
-      position: absolute;
-      right: 0px;
-      top: 0px;
-      label {
-        display: inline-block;
-        width: 150px;
-        height: 100px;
-        padding: 35px 25px 35px 95px;
-        span {
-          display: block;
-          width: 35px;
-          height: 14px;
-          border-top: 2px solid #eee;
-        }
-      }
-      label:hover {
-        background-color: rgba(0, 0, 0, 0.13);
-      }
-      &-toogleText {
-        position: absolute;
-        right: 75px;
-        top: 15px;
-        font-size: 20px;
-        color: white;
-      }
-    }
-    &-links {
-      position: fixed;
-      display: block;
-      z-index: 2;
-      width: 100%;
-      background-color: rgba(20, 20, 20, 0.9);
-      height: 0px;
-      transition: all 0.3s ease-in;
-      overflow-y: hidden;
-      top: 0px;
-      left: 0px;
-      &-btnFechar {
-        padding: 20px 7px 0px 0px;
-        text-align: right;
-        display: block;
-        width: 100%;
-        height: 80px;
-        &-logo {
-          display: inline-block;
-          position: absolute;
-          top: 10px;
-          left: 10px;
-        }
-        label {
-          font-size: 40px;
-          color: white;
-          padding: 7px 16px;
-          border-radius: 5px;
-        }
-        label:hover {
-          cursor: pointer;
-          background: #4d4d4d;
-        }
-      }
-      a {
-        display: block;
-        width: 100%;
-        padding: 30px 15px !important;
-      }
-      a:hover {
-        background: $color-11art !important;
-        font-weight: bold;
-        color: white;
-      }
-      a:after {
-        display: none;
-      }
-      hr {
-        display: inline-block;
-        border-color: rgba(255, 255, 255, 0.4);
-      }
-    }
-  }
-
-  #nav-mobileBtnToogle:not(:checked) + .nav-links {
-    height: 0;
-    opacity: 0;
-  }
-
-  #nav-mobileBtnToogle:checked + .nav-links {
-    height: 100vh;
-    opacity: 1;
-    overflow-y: auto;
-  }
-}

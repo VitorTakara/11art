@@ -112,14 +112,50 @@ body {
             color: white;
          }
       }
+
+      &-reset{
+         border-color: rgb(187, 187, 187);
+         color: darken(rgb(187, 187, 187), 5%);
+         &:hover{
+            background: rgb(110, 110, 110); 
+            border-color: rgb(110, 110, 110); 
+            color: white;
+         }
+      }
    }
 }
 
+.boxNossosTrabalhos{
+   &-title{
+      font-size: 2.5em;
+      padding-bottom: 20px;  
+   }
+}
+
+.boxVamosConversar{
+   &-title{
+      font-size: 2.5em;
+      padding: 20px 0 10px 0;
+   }
+
+   &-img{
+      margin-top: 20px;
+      width: 200px;
+      height: 200px;
+   }
+
+   &-form{
+      &-btnEnviar{
+         float: right;
+         margin-left: 10px; 
+      }
+   }
+}
 
 .boxComoFunciona{
    &-title{
       font-size: 2.5em;
-      padding: 40px 0 10px 0;
+      padding: 20px 0 10px 0;
    }
 
    &-circle{
@@ -158,6 +194,108 @@ body {
 
       &-subtitle{
          font-size: 1.4em;
+      }
+   }
+}
+
+.formControl {
+   ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ccc; 
+    opacity: 1; /* Firefox */
+   }
+
+   :-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: #ccc;
+   }
+
+   ::-ms-input-placeholder { /* Microsoft Edge */
+      color: #ccc;
+   }
+
+   margin: 0 0 15px 0;
+
+   &-input{
+      width: 100%;
+      border: 1px solid;
+      border-color: $color-primary;
+      border-radius: 3px;
+      padding: 10px;
+      font-size: 1.5em;
+      color: $color-primary;
+
+      &-design{
+         border-color: $color-design;
+         color: darken($color-design, 20%);
+      }
+   }
+
+   &-label{
+      font-size: 1.6em; 
+      font-weight: 500;
+
+      &-design{
+         color: darken($color-design, 20%);
+      }
+   }
+}
+
+.panel{
+   padding: 25px 25px;
+   min-height: 400px;
+   display: flex;
+   align-items: center;
+
+   &-left{
+      align-content: center;
+
+      &-title{
+         font-size: 3em;
+      }
+
+      &-img{
+         height: 200px;
+         width: 200px;
+      }
+   }
+
+   &-right{
+      align-content: center;
+
+      &-description{
+         font-size: 2em;
+      }
+   }
+}
+
+.footer{
+   height: 100px;
+   width: 100%;
+   padding: 10px 10px 20px 10px;
+   background: white;
+   color: rgb(158, 158, 158);
+   font-size: 1.2em;
+   display: flex;
+   &-left{
+      flex: 1;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+   }
+
+   &-center{
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   &-right{ 
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      &-fb:hover{
+         color: rgb(19, 94, 155);
       }
    }
 }

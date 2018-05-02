@@ -5,8 +5,9 @@
 @import "mixins/index.scss";
 
 // Bootstrap Normalize e Grid (APENAS)
-@import "plugins/bootstrap.scss";
 @import "plugins/buttons.scss";
+@import "plugins/photoswipe.scss";
+@import "plugins/bootstrap.scss";
 
 // Base
 @import "base/index.scss";

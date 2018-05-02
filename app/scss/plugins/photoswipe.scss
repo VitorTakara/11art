@@ -1,0 +1,58 @@
+.gallery {
+   width: 100%;
+   float: left;
+ }
+ .gallery img {
+   height: 100%; 
+   width: 100%;
+   transition: .2s; 
+   border-radius: 3px;
+ }
+
+ .gallery figure {
+   float: left;
+   overflow: hidden;
+   height: 300px;
+   position: relative;
+   padding: 5px;  
+ }
+
+ .gallery figure figcaption{
+    display: none;
+ }
+
+ .gallery figure:hover img {
+   padding: 10px;  
+   border-color: $color-primary;
+ }
+ 
+.gallery-overlay {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   height: 100%;
+   width: 100%;
+   opacity: 0;
+   transition: .5s ease;
+   border-radius: 3px;
+   background-color: rgba(48, 48, 48, 0.342);
+ }
+ 
+ figure:hover .gallery-overlay {
+   opacity: 1;
+ }
+ 
+ .gallery-overlay-text {
+   color: white;
+   font-size: 20px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   text-align: center;
+ }
+
+  
