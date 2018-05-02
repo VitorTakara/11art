@@ -1,3 +1,13 @@
+.float{
+   &-none_i{
+      float: none!important;
+   }
+
+   &-none{
+      float: none;
+   }
+}
+
 .fw{
    &-300{
       font-weight: 300;
@@ -203,6 +213,26 @@
 
 .pb-5{
 	padding-bottom: 15px;
+}
+
+.pb-6{
+	padding-bottom: 20px;
+}
+
+.pb-7{
+	padding-bottom: 25px;
+}
+
+.pb-8{
+	padding-bottom: 30px;
+}
+
+.pb-9{
+	padding-bottom: 35px;
+}
+
+.pb-10{
+	padding-bottom: 45px;
 }
 
 .pr-1{
