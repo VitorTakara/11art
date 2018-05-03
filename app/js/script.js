@@ -200,7 +200,7 @@
       if(hashData.pid && hashData.gid) {
          openPhotoSwipe( hashData.pid ,  galleryElements[ hashData.gid - 1 ], true, true );
       }
-      };
+   };
 
    // scroll suave
    function smoothScroll(location){
@@ -211,10 +211,18 @@
    }
 
    // init scroll reveal
+   function initComponents(){
+      window.sr = ScrollReveal();
 
-   window.sr = ScrollReveal();
-   sr.reveal('.animated', {duration: 1500});
-   sr.reveal('.comoFunciona', {duration: 1000}, 500);
-
-   // init galeria
-   initPhotoSwipeFromDOM('.gallery');
+      if(document.querySelectorAll('.animated').length > 0)
+         sr.reveal('.animated', {duration: 1500});
+      if(document.querySelectorAll('.animation-comoFunciona').length > 0)
+         sr.reveal('.animation-comoFunciona', {duration: 1000}, 500);
+      if(document.querySelectorAll('.animation-modulosServicos').length > 0)
+         sr.reveal('.animation-modulosServicos', {duration: 1000}, 500);
+      
+      // init galeria
+      if(document.querySelectorAll('.gallery').length > 0)
+         initPhotoSwipeFromDOM('.gallery');
+   }
+   

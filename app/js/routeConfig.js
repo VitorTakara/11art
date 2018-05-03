@@ -2,24 +2,20 @@ function $id(id) {
   return document.getElementById(id);
 }
 
-function loadHTML(url, id, view) {
-  req = new XMLHttpRequest();
-  req.open('GET', url);
-  req.send();
-  req.onload = function () {
-    var color;
+function getNavBar(){
+   var navBar_color;
 
    switch (view) {
       case "home":
-         color = "#eb56007e";
+         navBar_color = "#eb56007e";
       break;
       case "design":
-         color = "rgb(76, 217, 100)";
+         navBar_color = "rgb(76, 217, 100)";
       break;
    }
 
-    var navbar = `
-    <nav class="nav strokeEffect" style="background:${color}">
+   return `
+      <nav class="nav strokeEffect" style="background:${navBar_color}">
       <div class="nav-header">
          <div class="nav-header-title">
             <a href="#">
@@ -47,9 +43,17 @@ function loadHTML(url, id, view) {
          <a href="#!sobrenos">SOBRE NÓS</a>
          <a class="mtn-4" href="#!contato">CONTATO</a>
       </div>
-   </nav>`;
+      </nav>
+   `;
+}
 
-   $id(id).innerHTML = navbar + req.responseText;
+function loadHTML(url, id, view) {
+   req = new XMLHttpRequest();
+   req.open('GET', url);
+   req.send();
+   req.onload = function () {
+   $id(id).innerHTML = getNavBar() + req.responseText; // Insere no HTML
+   initComponents(); // Iniciar Galeria e Animações de Smoothscroll
   };
 }
 
