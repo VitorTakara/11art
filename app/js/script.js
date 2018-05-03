@@ -214,9 +214,9 @@
    function initComponents(){
       window.sr = ScrollReveal();
 
-      if(document.querySelectorAll('.animated').length > 0)
-         sr.reveal('.animated', {duration: 1500});
-      if(document.querySelectorAll('. animation-comoFunciona').length > 0)
+      if(document.querySelectorAll('.animated-default').length > 0)
+         sr.reveal('.animated-default', {duration: 1500});
+      if(document.querySelectorAll('.animation-comoFunciona').length > 0)
          sr.reveal('. animation-comoFunciona', {duration: 1000}, 500);
       if(document.querySelectorAll('.animation-modulosServicos').length > 0)
          sr.reveal('.animation-modulosServicos', {duration: 1000}, 500);
