@@ -2,7 +2,7 @@ function $id(id) {
   return document.getElementById(id);
 }
 
-function getNavBar(){
+function getNavBar(view){
    var navBar_color;
 
    switch (view) {
@@ -52,7 +52,8 @@ function loadHTML(url, id, view) {
    req.open('GET', url);
    req.send();
    req.onload = function () {
-   $id(id).innerHTML = getNavBar() + req.responseText; // Insere no HTML
+   var navbar = getNavBar(view);
+   $id(id).innerHTML = navbar + req.responseText; // Insere no HTML
    initComponents(); // Iniciar Galeria e Animações de Smoothscroll
   };
 }
