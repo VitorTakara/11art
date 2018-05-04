@@ -1,26 +1,29 @@
 function $id(id) {
-  return document.getElementById(id);
+   return document.getElementById(id);
 }
 
-function getNavBar(view){
+function getNavBar(view) {
    var navBar_color;
 
    switch (view) {
       case "home":
          navBar_color = "#fb8c00ba";
-      break;
+         break;
       case "web":
          navBar_color = "rgb(0, 122, 250)";
-      break;
+         break;
       case "3d":
          navBar_color = "rgb(88, 86, 214)";
-      break;
+         break;
       case "video":
          navBar_color = "rgb(255, 59, 48)";
-      break;
+         break;
       case "design":
          navBar_color = "rgb(76, 217, 100)";
-      break;
+         break;
+      default:
+         navBar_color = "#fb8c00";
+         break;
    }
 
    return `
@@ -61,43 +64,55 @@ function loadHTML(url, id, view) {
    req.open('GET', url);
    req.send();
    req.onload = function () {
-   var navbar = getNavBar(view);
-   $id(id).innerHTML = navbar + req.responseText; // Insere no HTML
-   initComponents(); // Iniciar Galeria e Animações suaves
-   smoothScroll("view"); // Vá para o topo
-   view == "home" ? initParticulasBG() : destroyParticulasBG(); // Constrói/Destrói particulas baseado na view
-  };
+      var navbar = getNavBar(view);
+      $id(id).innerHTML = navbar + req.responseText; // Insere no HTML
+      initComponents(); // Iniciar Galeria e Animações suaves
+      smoothScroll("view"); // Vá para o topo
+      view == "home" ? initParticulasBG() : destroyParticulasBG(); // Constrói/Destrói particulas baseado na view
+   };
 }
 
 // use #! to hash
 router = new Navigo(null, true, '#!');
 router.on({
-  // 'view' is the id of the div element inside which we render the HTML
-  'home': function home() {
-   loadHTML('./home.html', 'view', "home");
+   // 'view' is the id of the div element inside which we render the HTML
+   'home': function home() {
+      loadHTML('./home.html', 'view', "home");
    },
-  'design': function design() {
-   loadHTML('./design.html', 'view', "design");
-  },
-  '3d': function design() {
-   loadHTML('./3d.html', 'view', "3d");
-  },
-  'web': function design() {
-   loadHTML('./web.html', 'view', "web");
-  },
-  'video': function design() {
-   loadHTML('./video.html', 'view', "video");
-  }
+   'design': function design() {
+      loadHTML('./design.html', 'view', "design");
+   },
+   '3d': function design() {
+      loadHTML('./3d.html', 'view', "3d");
+   },
+   'web': function design() {
+      loadHTML('./web.html', 'view', "web");
+   },
+   'video': function design() {
+      loadHTML('./video.html', 'view', "video");
+   },
+   'sobrenos': function design() {
+      loadHTML('./sobrenos.html', 'view', "sobrenos");
+   },
+   'contato': function design() {
+      loadHTML('./contato.html', 'view', "contato");
+   },
+   'portfolio': function design() {
+      loadHTML('./portfolio.html', 'view', "portfolio");
+   },
+   'servicos': function design() {
+      loadHTML('./servicos.html', 'view', "servicos");
+   },
 });
 
 // set the default route
 router.on(function () {
-  $id('view').innerHTML = loadHTML('./home.html', 'view', "home");
+   $id('view').innerHTML = loadHTML('./home.html', 'view', "home");
 });
 
 // set the 404 route
 router.notFound(function (query) {
-  $id('view').innerHTML = '<h1>TODO - NOTFOUND</h1>';
+   $id('view').innerHTML = '<h1>TODO - NOTFOUND</h1>';
 });
 
 router.resolve();

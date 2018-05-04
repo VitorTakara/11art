@@ -45,11 +45,9 @@ body {
       padding: 10px;
     }
   }
-
   &-mobileBtn {
     display: none;
   }
-
   &-links {
     float: right;
     font-size: 1.7em;
@@ -103,37 +101,30 @@ body {
       &-design{
          background: $color-design;
          border-color: $color-design;
-
          &:hover{
             background: darken($color-design, 10%);
             border-color: darken($color-design, 10%);
          }
       }
-
       &-3d{
          background: $color-3d;
          border-color: $color-3d;
-
          &:hover{
             background: darken($color-3d, 10%);
             border-color: darken($color-3d, 10%);
          }
       }
-
       &-video{
          background: $color-video;
          border-color: $color-video;
-
          &:hover{
             background: darken($color-video, 10%);
             border-color: darken($color-video, 10%);
          }
       }
-
       &-web{
          background: $color-web;
          border-color: $color-web;
-
          &:hover{
             background: darken($color-web, 10%);
             border-color: darken($color-web, 10%);
@@ -150,7 +141,6 @@ body {
             color: white;
          }
       }
-
       &-3d{
          border-color: $color-3d;
          color: darken($color-3d, 10%);
@@ -159,7 +149,6 @@ body {
             color: white;
          }
       }
-
       &-web{
          border-color: $color-web;
          color: darken($color-web, 10%);
@@ -168,7 +157,6 @@ body {
             color: white;
          }
       }
-
       &-video{
          border-color: $color-video;
          color: darken($color-video, 10%);
@@ -177,7 +165,6 @@ body {
             color: white;
          }
       }
-
       &-reset{
          border-color: rgb(187, 187, 187);
          color: darken(rgb(187, 187, 187), 5%);
@@ -221,19 +208,15 @@ body {
    &-mark{
       color: white;
       padding: 2px 8px; 
-
       &-design{
          background: $color-design;
       }
-
       &-3d{
          background: $color-3d;
       }
-
       &-web{
          background: $color-web;
       }
-
       &-video{
          background: $color-video;
       }
@@ -252,18 +235,15 @@ body {
       border-radius: 50%;
       text-align: center;
       transition: .2s;
-
       &-design{ 
          &:hover{
             border-color: $color-design;
          }
-
          &:hover &-img{
             transition: .2s;
             color: $color-design;
             margin-top:35px;
          }
-
          &-img{
             transition: .2s;
             margin-top: 45px;
@@ -274,13 +254,11 @@ body {
          &:hover{
             border-color: $color-3d;
          }
-
          &:hover &-img{
             transition: .2s;
             color: $color-3d;
             margin-top:35px;
          }
-
          &-img{
             transition: .2s;
             margin-top: 45px;
@@ -291,13 +269,11 @@ body {
          &:hover{
             border-color: $color-web;
          }
-
          &:hover &-img{
             transition: .2s;
             color: $color-web;
             margin-top:35px;
          }
-
          &-img{
             transition: .2s;
             margin-top: 45px;
@@ -308,30 +284,25 @@ body {
          &:hover{
             border-color: $color-video;
          }
-
          &:hover &-img{
             transition: .2s;
             color: $color-video;
             margin-top:35px;
          }
-
          &-img{
             transition: .2s;
             margin-top: 45px;
          }
-      }
-      
+      }      
    }
 
    &-description{
       width: 100%;
       text-align: center;
-
       &-title{
          margin-top: 15px;
          font-size: 2em;
       }
-
       &-subtitle{
          font-size: 1.4em;
       }
@@ -351,9 +322,7 @@ body {
    ::-ms-input-placeholder { /* Microsoft Edge */
       color: #ccc;
    }
-
    margin: 0 0 15px 0;
-
    &-input{
       width: 100%;
       border: 1px solid;
@@ -362,24 +331,19 @@ body {
       padding: 10px;
       font-size: 1.5em;
       color: $color-primary;
-
       &-design{
          border-color: $color-design;
       }
-
       &-3d{
          border-color: $color-3d;
       }
-
       &-web{
          border-color: $color-web;
       }
-
       &-video{
          border-color: $color-video;
       }
    }
-
    &-label{
       font-size: 1.6em; 
       font-weight: 500;
@@ -392,23 +356,18 @@ body {
    min-height: 400px;
    display: flex;
    align-items: center;
-
    &-left{
       align-content: center;
-
       &-title{
          font-size: 3em;
       }
-
       &-img{
          height: 200px;
          width: 200px;
       }
    }
-
    &-right{
       align-content: center;
-
       &-description{
          font-size: 2em;
       }
@@ -432,14 +391,12 @@ body {
          width:40px;
       }
    }
-
    &-center{
       flex: 1;
       display: flex;
       justify-content: center;
       align-items: center;
    }
-
    &-right{ 
       flex: 1;
       display: flex;
