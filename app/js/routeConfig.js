@@ -7,7 +7,16 @@ function getNavBar(view){
 
    switch (view) {
       case "home":
-         navBar_color = "#eb56007e";
+         navBar_color = "#fb8c00ba";
+      break;
+      case "web":
+         navBar_color = "rgb(0, 122, 250)";
+      break;
+      case "3d":
+         navBar_color = "rgb(88, 86, 214)";
+      break;
+      case "video":
+         navBar_color = "rgb(255, 59, 48)";
       break;
       case "design":
          navBar_color = "rgb(76, 217, 100)";
@@ -19,7 +28,7 @@ function getNavBar(view){
       <div class="nav-header">
          <div class="nav-header-title">
             <a href="#">
-               <img src="img/11Art_White.png" width="50" height="80" alt=""> </a>
+               <img src="img/11Art_White.svg" width="50" height="80" alt=""> </a>
          </div>
       </div>
       <div class="nav-mobileBtn">
@@ -32,7 +41,7 @@ function getNavBar(view){
       </div>
       <input type="checkbox" id="nav-mobileBtnToogle">
       <div class="nav-links">
-         <img class="nav-links-logo" src="img/11Art_White.png" width="50" height="80" alt="">
+         <img class="nav-links-logo" src="img/11Art_White.svg" width="50" height="80" alt="">
          <div class="nav-links-btnFechar">
             <label for="nav-mobileBtnToogle">Fechar X</label>
          </div>
@@ -54,7 +63,9 @@ function loadHTML(url, id, view) {
    req.onload = function () {
    var navbar = getNavBar(view);
    $id(id).innerHTML = navbar + req.responseText; // Insere no HTML
-   initComponents(); // Iniciar Galeria e Animações de Smoothscroll
+   initComponents(); // Iniciar Galeria e Animações suaves
+   smoothScroll("view"); // Vá para o topo
+   view == "home" ? initParticulasBG() : destroyParticulasBG(); // Constrói/Destrói particulas baseado na view
   };
 }
 
@@ -64,9 +75,18 @@ router.on({
   // 'view' is the id of the div element inside which we render the HTML
   'home': function home() {
    loadHTML('./home.html', 'view', "home");
-  },
+   },
   'design': function design() {
    loadHTML('./design.html', 'view', "design");
+  },
+  '3d': function design() {
+   loadHTML('./3d.html', 'view', "3d");
+  },
+  'web': function design() {
+   loadHTML('./web.html', 'view', "web");
+  },
+  'video': function design() {
+   loadHTML('./video.html', 'view', "video");
   }
 });
 
@@ -77,7 +97,7 @@ router.on(function () {
 
 // set the 404 route
 router.notFound(function (query) {
-  $id('view').innerHTML = '<h1>NOTFOUND</h1>';
+  $id('view').innerHTML = '<h1>TODO - NOTFOUND</h1>';
 });
 
 router.resolve();

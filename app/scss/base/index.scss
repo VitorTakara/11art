@@ -20,12 +20,22 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+#particles-js{
+   position: fixed;
+   top:0;
+   left:0;
+   width: 100%;
+   height: 100%;
+   z-index: 1;
+}
+
 .nav {
   height: 100px;
   width: 100%;
   padding-left: 15px;
   padding-right: 20px;
   position: relative;
+  z-index: 2;
   &-header {
     display: inline;
     &-title {
@@ -89,7 +99,6 @@ body {
    border: 2px solid;
    color: white;
    transition: .3s;
-
    &-fill{
       &-design{
          background: $color-design;
@@ -100,6 +109,36 @@ body {
             border-color: darken($color-design, 10%);
          }
       }
+
+      &-3d{
+         background: $color-3d;
+         border-color: $color-3d;
+
+         &:hover{
+            background: darken($color-3d, 10%);
+            border-color: darken($color-3d, 10%);
+         }
+      }
+
+      &-video{
+         background: $color-video;
+         border-color: $color-video;
+
+         &:hover{
+            background: darken($color-video, 10%);
+            border-color: darken($color-video, 10%);
+         }
+      }
+
+      &-web{
+         background: $color-web;
+         border-color: $color-web;
+
+         &:hover{
+            background: darken($color-web, 10%);
+            border-color: darken($color-web, 10%);
+         }
+      }
    }
 
    &-outline{
@@ -108,6 +147,33 @@ body {
          color: darken($color-design, 10%);
          &:hover{
             background: $color-design;
+            color: white;
+         }
+      }
+
+      &-3d{
+         border-color: $color-3d;
+         color: darken($color-3d, 10%);
+         &:hover{
+            background: $color-3d;
+            color: white;
+         }
+      }
+
+      &-web{
+         border-color: $color-web;
+         color: darken($color-web, 10%);
+         &:hover{
+            background: $color-web;
+            color: white;
+         }
+      }
+
+      &-video{
+         border-color: $color-video;
+         color: darken($color-video, 10%);
+         &:hover{
+            background: $color-video;
             color: white;
          }
       }
@@ -159,6 +225,18 @@ body {
       &-design{
          background: $color-design;
       }
+
+      &-3d{
+         background: $color-3d;
+      }
+
+      &-web{
+         background: $color-web;
+      }
+
+      &-video{
+         background: $color-video;
+      }
    }
 
    &-title{
@@ -175,20 +253,74 @@ body {
       text-align: center;
       transition: .2s;
 
-      &-img{
-         transition: .2s;
-         margin-top: 45px;
+      &-design{ 
+         &:hover{
+            border-color: $color-design;
+         }
+
+         &:hover &-img{
+            transition: .2s;
+            color: $color-design;
+            margin-top:35px;
+         }
+
+         &-img{
+            transition: .2s;
+            margin-top: 45px;
+         }
       }
 
-      &:hover{
-         border-color: $color-design;
+      &-3d{ 
+         &:hover{
+            border-color: $color-3d;
+         }
+
+         &:hover &-img{
+            transition: .2s;
+            color: $color-3d;
+            margin-top:35px;
+         }
+
+         &-img{
+            transition: .2s;
+            margin-top: 45px;
+         }
       }
 
-      &:hover &-img{
-         transition: .2s;
-         color: $color-design;
-         margin-top:35px;
+      &-web{ 
+         &:hover{
+            border-color: $color-web;
+         }
+
+         &:hover &-img{
+            transition: .2s;
+            color: $color-web;
+            margin-top:35px;
+         }
+
+         &-img{
+            transition: .2s;
+            margin-top: 45px;
+         }
       }
+
+      &-video{ 
+         &:hover{
+            border-color: $color-video;
+         }
+
+         &:hover &-img{
+            transition: .2s;
+            color: $color-video;
+            margin-top:35px;
+         }
+
+         &-img{
+            transition: .2s;
+            margin-top: 45px;
+         }
+      }
+      
    }
 
    &-description{
@@ -233,7 +365,18 @@ body {
 
       &-design{
          border-color: $color-design;
-            
+      }
+
+      &-3d{
+         border-color: $color-3d;
+      }
+
+      &-web{
+         border-color: $color-web;
+      }
+
+      &-video{
+         border-color: $color-video;
       }
    }
 
@@ -285,6 +428,9 @@ body {
       display: flex;
       justify-content: flex-start;
       align-items: center;
+      &-logo{
+         width:40px;
+      }
    }
 
    &-center{
