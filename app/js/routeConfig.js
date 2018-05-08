@@ -92,7 +92,7 @@ function getNavBar(view) {
       <nav class="nav strokeEffect" style="background:${navBar_color}">
       <div class="nav-header">
          <div class="nav-header-title">
-            <a href="#">
+            <a href="#!home">
                <img src="img/11Art_White.svg" width="50" height="80" alt=""> </a>
          </div>
       </div>
@@ -110,12 +110,11 @@ function getNavBar(view) {
          <div class="nav-links-btnFechar">
             <label for="nav-mobileBtnToogle">Fechar X</label>
          </div>
-         <hr>
          <a href="#!home">HOME</a>
          <a href="#!servicos">SERVIÇOS</a>
          <a href="#!portfolio">PORTFOLIO</a>
          <a href="#!sobrenos">SOBRE NÓS</a>
-         <a class="mtn-4" href="#!contato">CONTATO</a>
+         <a class="mtn-4 mb-10" href="#!contato">CONTATO</a>
       </div>
       </nav>
    `;
