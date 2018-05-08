@@ -7,10 +7,10 @@
     background: $color-11art;
     color: white;
   }
+}
 
-  body{
-     color: $color-primary;
-  }
+body{
+   color: $color-primary;
 }
 
 html,
@@ -87,6 +87,20 @@ body {
   display: none;
 }
 
+.pageTitle{
+   text-align: center;
+   margin-top: 60px;
+   margin-bottom: 25px;
+
+   &-h1{
+      font-size: 3em;
+   }
+
+   &-span{
+     border-radius: 5px;
+   }
+}
+
 .btn{
    border: none;
    background: none;
@@ -130,6 +144,14 @@ body {
             border-color: darken($color-web, 10%);
          }
       }
+      &-11art{
+         background: $color-11art;
+         border-color: $color-11art;
+         &:hover{
+            background: darken($color-11art, 10%);
+            border-color: darken($color-11art, 10%);
+         }
+      }
    }
 
    &-outline{
@@ -162,6 +184,14 @@ body {
          color: darken($color-video, 10%);
          &:hover{
             background: $color-video;
+            color: white;
+         }
+      }
+      &-11art{
+         border-color: $color-11art;
+         color: darken($color-11art, 10%);
+         &:hover{
+            background: $color-11art;
             color: white;
          }
       }
@@ -204,7 +234,7 @@ body {
    }
 }
 
-.boxComoFunciona{
+.text{
    &-mark{
       color: white;
       padding: 2px 8px; 
@@ -212,7 +242,7 @@ body {
          background: $color-design;
       }
       &-3d{
-         background: $color-3d;
+         background: $color-3d;   
       }
       &-web{
          background: $color-web;
@@ -220,8 +250,13 @@ body {
       &-video{
          background: $color-video;
       }
+      &-11art{
+         background: $color-11art;
+      }
    }
+}
 
+.boxComoFunciona{
    &-title{
       font-size: 2.5em;
       padding: 20px 0 10px 0;
@@ -292,8 +327,23 @@ body {
          &-img{
             transition: .2s;
             margin-top: 45px;
+         }  
+      }
+
+      &-11art{ 
+         &:hover{
+            border-color: $color-11art;
          }
-      }      
+         &:hover &-img{
+            transition: .2s;
+            color: $color-11art;
+            margin-top:35px;
+         }
+         &-img{
+            transition: .2s;
+            margin-top: 45px;
+         }
+      }   
    }
 
    &-description{
@@ -343,6 +393,9 @@ body {
       &-video{
          border-color: $color-video;
       }
+      &-11art{
+         border-color: $color-11art;
+      }
    }
    &-label{
       font-size: 1.6em; 
@@ -371,6 +424,9 @@ body {
       &-description{
          font-size: 2em;
       }
+   }
+   &-servicos{
+      min-height: 350px;
    }
 }
 

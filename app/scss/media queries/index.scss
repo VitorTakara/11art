@@ -3,6 +3,8 @@
    .gallery figure {
       height: 150px; 
     }
+
+    
 }
 
 
@@ -28,6 +30,14 @@
    .gallery figure {
       height: 160px; 
     }
+
+   .show_min600{
+      display: block;
+   }
+
+   .show_max600{
+      display: none;
+   }
 }
 
 @media screen and (max-width: 600px){
@@ -37,6 +47,14 @@
 
    .panel{
       display: inline-block;
+   }
+
+   .show_min600{
+      display: none;
+   }
+
+   .show_max600{
+      display: block;
    }
 }
 
@@ -64,6 +82,10 @@
        margin-top:10px;
        width: 100% !important;
        margin-left:0;
+
+       &-actions{
+         min-height:50px !important;
+       }
     }
  
    .nav {
@@ -175,6 +197,9 @@
    .btn{
       width: 30%;
       float: left;
+      &-actions{
+         min-height: 70px;
+      }
    }
    
    .boxVamosConversar-form-btnEnviar{
