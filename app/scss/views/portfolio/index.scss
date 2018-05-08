@@ -1,0 +1,37 @@
+.gallery{
+   &-design{
+      &:hover &-img{
+         border-top: 5px solid #fff;
+      }
+      &-img{ 
+         border-top: 5px solid $color-design;
+      }
+   }
+
+   &-3d{
+      &:hover &-img{
+         border-top: 5px solid #fff;
+      }
+      &-img{
+         border-top: 5px solid $color-3d;
+      }
+   }
+
+   &-video{
+      &:hover &-img{
+         border-top: 5px solid #fff;
+      }
+      &-img{
+         border-top: 5px solid $color-video;
+      }
+   }
+
+   &-web{
+      &:hover &-img{
+         border-top: 5px solid #fff;
+      }
+      &-img{
+         border-top: 5px solid $color-web;
+      }
+   }
+}
