@@ -2,6 +2,68 @@ function $id(id) {
    return document.getElementById(id);
 }
 
+function loadHTML(url, id, view) {
+   req = new XMLHttpRequest();
+   req.open('GET', url);
+   req.send();
+   req.onload = function () {
+      var navbar = getNavBar(view);
+      var footer = getFooter(view);
+
+      $id(id).innerHTML = navbar + req.responseText + footer; // Insere no HTML
+      initComponents(); // Iniciar Galeria e Animações suaves
+      smoothScroll("view"); // Vá para o topo
+      view == "home" ? initParticulasBG() : destroyParticulasBG(); // Constrói/Destrói particulas baseado na view
+      if (view == "portfolio") document.getElementById("11art").click(); // Clica no "Todos" na tela de portfolio
+   };
+}
+
+// use #! to hash
+router = new Navigo(null, true, '#!');
+router.on({
+   // 'view' is the id of the div element inside which we render the HTML
+   'home': function home() {
+      loadHTML('./home.html', 'view', "home");
+   },
+   'design': function design() {
+      loadHTML('./design.html', 'view', "design");
+   },
+   '3d': function design() {
+      loadHTML('./3d.html', 'view', "3d");
+   },
+   'web': function design() {
+      loadHTML('./web.html', 'view', "web");
+   },
+   'video': function design() {
+      loadHTML('./video.html', 'view', "video");
+   },
+   'sobrenos': function design() {
+      loadHTML('./sobrenos.html', 'view', "sobrenos");
+   },
+   'contato': function design() {
+      loadHTML('./contato.html', 'view', "contato");
+   },
+   'portfolio': function design() {
+      loadHTML('./portfolio.html', 'view', "portfolio");
+   },
+   'servicos': function design() {
+      loadHTML('./servicos.html', 'view', "servicos");
+   },
+});
+
+// set the default route
+router.on(function () {
+   $id('view').innerHTML = loadHTML('./home.html', 'view', "home");
+});
+
+// set the 404 route
+router.notFound(function (query) {
+   $id('view').innerHTML = '<h1>TODO - NOTFOUND</h1>';
+});
+
+router.resolve();
+
+
 function getNavBar(view) {
    var navBar_color;
 
@@ -57,62 +119,25 @@ function getNavBar(view) {
       </div>
       </nav>
    `;
-}
+};
 
-function loadHTML(url, id, view) {
-   req = new XMLHttpRequest();
-   req.open('GET', url);
-   req.send();
-   req.onload = function () {
-      var navbar = getNavBar(view);
-      $id(id).innerHTML = navbar + req.responseText; // Insere no HTML
-      initComponents(); // Iniciar Galeria e Animações suaves
-      smoothScroll("view"); // Vá para o topo
-      view == "home" ? initParticulasBG() : destroyParticulasBG(); // Constrói/Destrói particulas baseado na view
-   };
-}
-
-// use #! to hash
-router = new Navigo(null, true, '#!');
-router.on({
-   // 'view' is the id of the div element inside which we render the HTML
-   'home': function home() {
-      loadHTML('./home.html', 'view', "home");
-   },
-   'design': function design() {
-      loadHTML('./design.html', 'view', "design");
-   },
-   '3d': function design() {
-      loadHTML('./3d.html', 'view', "3d");
-   },
-   'web': function design() {
-      loadHTML('./web.html', 'view', "web");
-   },
-   'video': function design() {
-      loadHTML('./video.html', 'view', "video");
-   },
-   'sobrenos': function design() {
-      loadHTML('./sobrenos.html', 'view', "sobrenos");
-   },
-   'contato': function design() {
-      loadHTML('./contato.html', 'view', "contato");
-   },
-   'portfolio': function design() {
-      loadHTML('./portfolio.html', 'view', "portfolio");
-   },
-   'servicos': function design() {
-      loadHTML('./servicos.html', 'view', "servicos");
-   },
-});
-
-// set the default route
-router.on(function () {
-   $id('view').innerHTML = loadHTML('./home.html', 'view', "home");
-});
-
-// set the 404 route
-router.notFound(function (query) {
-   $id('view').innerHTML = '<h1>TODO - NOTFOUND</h1>';
-});
-
-router.resolve();
+function getFooter(view){
+   if(view != 'home')
+      return `
+      <div class="container">
+         <hr>
+         <footer class="footer">
+            <div class="footer-left">
+               <a href="#"><img class="footer-left-logo" src="./img/11Art_Original.svg"></a>
+            </div>
+            <div class="footer-center">
+                  <span>&copy; 11Art 2018</span>
+            </div>
+            <div class="footer-right">
+               <a target="_blank" href="https://www.google.com"><i class="footer-right-fb fa fa-facebook-official fa-3x"></i></a>
+            </div>
+         </footer>
+      </div>`;
+   else
+      return '';
+};

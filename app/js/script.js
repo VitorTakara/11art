@@ -347,8 +347,10 @@ function initParticulasBG() {
 function destroyParticulasBG() {
    document.getElementById("particles-js").style.display = "none";
    document.body.style.backgroundColor = "white";
-   cancelRequestAnimFrame(pJSDom[0].pJS.fn.checkAnimFrame);
-   cancelRequestAnimFrame(pJSDom[0].pJS.fn.drawAnimFrame);
-   pJSDom[0].pJS.fn.particlesEmpty();
-   pJSDom[0].pJS.fn.canvasClear();
+   if(pJSDom[0] != undefined){
+      cancelRequestAnimFrame(pJSDom[0].pJS.fn.checkAnimFrame);
+      cancelRequestAnimFrame(pJSDom[0].pJS.fn.drawAnimFrame);
+      pJSDom[0].pJS.fn.particlesEmpty();
+      pJSDom[0].pJS.fn.canvasClear();
+   }
 }
