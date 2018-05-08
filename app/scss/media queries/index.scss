@@ -188,6 +188,19 @@
    }
  }
 
+ @media (max-width: 996px) {
+    // Aqui Wtf
+   .sobrenos{   
+      &-oTime{
+         &-container{
+            width: 50%;
+            margin-left: 3%;
+            float:left;
+         }
+      }
+   }
+}
+
 @media (min-width: 996px) {
    .gallery figure {
       height: 230px;
