@@ -82,6 +82,11 @@
        margin-top:10px;
        width: 100% !important;
        margin-left:0;
+       
+       &-portfolio{
+         width: 45%!important;
+         min-height: 70px;
+       }
 
        &-actions{
          min-height:50px !important;
@@ -197,6 +202,13 @@
    .btn{
       width: 30%;
       float: left;
+
+      &-portfolio{
+         width: 18%;
+         min-height: 70px;
+         margin: 0 1% 10px 1%;  
+      }
+
       &-actions{
          min-height: 70px;
       }
@@ -214,6 +226,12 @@
 
    .gallery figure {
       height: 280px; 
+    }
+
+    .btn{
+      &-portfolio{
+         margin-right: 10px; 
+      }
     }
 }
 

@@ -1,5 +1,116 @@
-<div style="position: absolute; top:200px;left: 50px; z-index: 1000;">
-
-   <h1 style="color: black">TO DO Portfolio</h1>
-   <a href="#!home" ><h1 style="color: white; height: 100px; width: 250px; background: #fb8c00; border: 3px solid #fb8c00; border-radius: 10px;">VOLTAR PARA HOME</h1></a>
+<div class="container">
+   <div class="pageTitle animation-default">
+      <h1 class="pageTitle-h1"><span class="text-mark text-mark-11art pr-5 pl-5 pageTitle-span">Portfolio</span></h1>
+      <p class="pageTitle-p">Escolha uma categoria abaixo para filtrar ;)</p>
    </div>
+   <div class="text-center animation-default row">
+      <div class="col-md-12">
+         <button onclick="portfolioFiltrar('todos')" class="btn btn-outline-11art btn-portfolio">Todos</button>
+         <button onclick="portfolioFiltrar('design')" class="btn btn-outline-design btn-portfolio">Design Gráfico</button>
+         <button onclick="portfolioFiltrar('3d')" class="btn btn-outline-3d btn-portfolio">Modelagem 3D</button>
+         <button onclick="portfolioFiltrar('web')" class="btn btn-outline-web btn-portfolio">Website</button>
+         <button onclick="portfolioFiltrar('video')" class="btn btn-outline-video btn-portfolio">Produção Vídeo</button>
+      </div>
+   </div>
+   <!-- [ START ] Nossos Trabalhos -->
+   <div class="row animation-default">
+      <div class="col-md-12 pb-6 pt-5">
+         <article class="boxPortfolio">
+
+            <div class="gallery">
+               <figure class="col-lg-3 col-md-3 col-xs-6 gallery-design">
+                  <a href="https://placekitten.com/1000/1001" data-size="1000x1000">
+                     <img class="gallery-design-img" src="https://placekitten.com/1000/1001" alt="Image description" />
+                     <div class="gallery-overlay">
+                        <div class="gallery-overlay-text">Cat 1</div>
+                     </div>
+                  </a>
+                  <figcaption>Cat  1</figcaption>                                    
+               </figure>
+         
+               <figure class="col-lg-3 col-md-3 col-xs-6 gallery-video">
+               <a href="https://placekitten.com/1000/1002" data-size="1000x1000">
+                     <img class="gallery-video-img" src="https://placekitten.com/1000/1002" alt="Image description" />
+                     <div class="gallery-overlay">
+                           <div class="gallery-overlay-text">Cat 2</div>
+                     </div>
+               </a>
+               <figcaption>Cat 2</figcaption>
+               </figure>
+
+               <figure class="col-lg-3 col-md-3 col-xs-6 gallery-3d">
+                     <a href="https://placekitten.com/1000/1003" data-size="1000x1000">
+                        <img class="gallery-3d-img" src="https://placekitten.com/1000/1003" alt="Image description" />
+                        <div class="gallery-overlay">
+                              <div class="gallery-overlay-text">Cat 3</div>
+                        </div>
+                     </a>
+                     <figcaption>Cat 3</figcaption>
+               </figure>
+
+               <figure class="col-lg-3 col-md-3 col-xs-6 gallery-web">
+                     <a href="https://placekitten.com/1000/1005" data-size="1000x1000">
+                        <img class="gallery-web-img" src="https://placekitten.com/1000/1005" alt="Image description" />
+                        <div class="gallery-overlay">
+                              <div class="gallery-overlay-text">Cat 4</div>
+                        </div>
+                     </a>
+                     <figcaption>Cat 4</figcaption>
+               </figure> 
+            </div>
+         </article>
+      </div>
+   </div>
+   <!-- [ END ] Nossos Trabalhos -->
+   
+   <hr>
+
+   <!-- [ START ] Vamos Conversar? -->
+   <div class="row animation-default">
+      <div class="col-md-12 pb-8">
+         <article class="boxVamosConversar">
+            <div class="text-center">
+                  <h2 class="boxVamosConversar-title">Vamos <span class="text-mark text-mark-11art">Conversar?</span> ;)</h2>
+            </div>
+            <form class="boxVamosConversar-form" role="form">
+               <div class="col-lg-offset-1 col-lg-3 col-md-5 text-center">
+                  <img class="boxVamosConversar-img mb-7" src="./img/postbox.svg">
+               </div>
+               <div class="col-lg-7 col-md-7 col-xs-12">
+                  <div class="formControl">
+                     <label class="formControl-label">Nome</label>
+                     <input required class="formControl-input formControl-input-11art" placeholder="Ex: Joãozinho"/>
+                  </div>
+                  <div class="formControl">
+                        <label class="formControl-label">Email</label>
+                        <input required type="email" class="formControl-input formControl-input-11art" placeholder="seuemail@email.com"/>
+                  </div>
+                  <div class="formControl">
+                        <label class="formControl-label">Celular</label>
+                        <input required class="formControl-input formControl-input-11art" placeholder="(00) 00000-0000"/>
+                  </div>
+                  <button class="boxVamosConversar-form-btnEnviar btn btn-fill-11art" type="button">Enviar</button>
+                  <button class="boxVamosConversar-form-btnEnviar btn btn-outline-reset" type="reset">Limpar</button>
+               </div>
+            </form>
+         </article>
+      </div>
+   </div>
+   <!-- [ END ] Vamos Conversar? -->
+
+   <hr>
+
+   <!-- [ START ] Footer -->
+   <footer class="footer footer-11art">
+      <div class="footer-left">
+         <a href="#"><img class="footer-left-logo" src="./img/11Art_Original.svg"></a>
+      </div>
+      <div class="footer-center">
+            <span>&copy; 11Art 2018</span>
+      </div>
+      <div class="footer-right">
+         <a target="_blank" href="https://www.google.com"><i class="footer-right-fb fa fa-facebook-official fa-3x"></i></a>
+      </div>
+   </footer>
+   <!-- [ END ] Footer -->
+</div>

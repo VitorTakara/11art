@@ -63,7 +63,7 @@ gulp.task("sass", function() {
 
 gulp.task("js", function() {
   return gulp
-    .src(["app/js/navigo.min.js", "app/js/particles.min.js", "app/js/script.js", "app/js/routeConfig.js"])
+    .src(["app/js/navigo.min.js", "app/js/particles.min.js", "app/js/script.js", "app/js/routeConfig.js", "app/js/portfolioFiltro.js"])
     .pipe(sourcemaps.init())
     .pipe(rigger())
     .pipe(concat("main.js"))
