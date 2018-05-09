@@ -240,7 +240,7 @@ function initComponents() {
 }
 
 function initParticulasBG() {
-   document.body.style.backgroundColor = "#535353";
+   document.body.style.backgroundColor = "rgb(114, 114, 114)";
    if (pJSDom.length == 1) {
       document.getElementById("particles-js").style.display = "block";
       pJSDom[0].pJS.fn.vendors.start();
