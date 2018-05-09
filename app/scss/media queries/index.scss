@@ -1,263 +1,242 @@
-
-@media screen and (max-width: 320px){
+@media screen and (max-width: 320px) {
    .gallery figure {
-      height: 150px; 
-    }
-
-    
+      height: 150px;
+   }
 }
 
-
-@media screen and (min-width: 320px){
+@media screen and (min-width: 320px) {
    .gallery figure {
-      height: 170px; 
-    }
+      height: 170px;
+   }
 }
 
-@media screen and (min-width: 370px){
+@media screen and (min-width: 370px) {
    .gallery figure {
-      height: 200px; 
-    }
+      height: 200px;
+   }
 }
 
-@media screen and (min-width: 450px){
+@media screen and (min-width: 450px) {
    .gallery figure {
-      height: 250px; 
-    }
+      height: 250px;
+   }
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 600px) {
    .gallery figure {
-      height: 160px; 
-    }
-
-   .show_min600{
+      height: 160px;
+   }
+   .show_min600 {
       display: block;
    }
-
-   .show_max600{
+   .show_max600 {
       display: none;
    }
 }
 
-@media screen and (max-width: 600px){
-   .hidden-xs{
-      display:none;
+@media screen and (max-width: 600px) {
+   .hidden-xs {
+      display: none;
    }
-
-   .panel{
+   .panel {
       display: inline-block;
    }
-
-   .show_min600{
+   .show_min600 {
       display: none;
    }
-
-   .show_max600{
+   .show_max600 {
       display: block;
+   }
+   .sobrenos {
+      &-oTime {
+         &-card {
+            width: 100%!important;
+            margin: 8px 0 8px 0!important;
+         }
+      }
    }
 }
 
-@media screen and (min-width: 700px){
+@media screen and (min-width: 700px) {
    .gallery figure {
-      height: 180px; 
-    }
+      height: 180px;
+   }
 }
 
 @media screen and (max-width: 768px) {
-
    // design.html
-   .boxComoFunciona-circle{
+   .boxComoFunciona-circle {
       margin: 30px auto 0 auto;
    }
- 
-   .designPanel{
+   .designPanel {
       display: inline-block;
       height: 100%;
-   }
- 
-   // base index.html
- 
-   .btn{
-       margin-top:10px;
-       width: 100% !important;
-       margin-left:0;
-       
-       &-portfolio{
-         width: 45%!important;
+   } // base index.html
+   .btn {
+      margin-top: 10px;
+      width: 100% !important;
+      margin-left: 0;
+      &-portfolio {
+         width: 45% !important;
          min-height: 70px;
-       }
-
-       &-actions{
-         min-height:50px !important;
-       }
-    }
- 
+      }
+      &-actions {
+         min-height: 50px !important;
+      }
+   }
    .nav {
-     &-mobileBtn {
-       display: inline-block;
-       position: absolute;
-       right: 0px;
-       top: 0px;
-       label {
+      &-mobileBtn {
          display: inline-block;
-         width: 150px;
-         height: 100px;
-         padding: 35px 25px 35px 95px;
-         span {
-           display: block;
-           width: 35px;
-           height: 14px;
-           border-top: 2px solid #eee;
-         }
-       }
-       label:hover {
-         background-color: rgba(0, 0, 0, 0.13);
-       }
-       &-toogleText {
          position: absolute;
-         right: 75px;
-         top: 15px;
-         font-size: 20px;
-         color: white;
-       }
-     }
-     &-links {
-       position: fixed;
-       display: block;
-       z-index: 2;
-       width: 100%;
-       background-color: rgba(20, 20, 20, 0.9);
-       height: 0px;
-       transition: all 0.3s ease-in;
-       overflow-y: hidden;
-       top: 0px;
-       left: 0px;
-       &-btnFechar {
-         padding: 20px 7px 0px 0px;
-         text-align: right;
-         display: block;
-         width: 100%;
-         height: 80px;
-         &-logo {
-           display: inline-block;
-           position: absolute;
-           top: 10px;
-           left: 10px;
-         }
+         right: 0px;
+         top: 0px;
          label {
-           font-size: 2em;
-           color: white;
-           padding: 7px 16px;
-           border-radius: 5px;
+            display: inline-block;
+            width: 150px;
+            height: 100px;
+            padding: 35px 25px 35px 95px;
+            span {
+               display: block;
+               width: 35px;
+               height: 14px;
+               border-top: 2px solid #eee;
+            }
          }
          label:hover {
-           cursor: pointer;
-           background: #4d4d4d;
+            background-color: rgba(0, 0, 0, 0.13);
          }
-       }
-       a {
-         display: block;
-         width: 100%;
-         padding: 30px 15px !important;
-       }
-       a:hover {
-         background: $color-11art !important;
-         font-weight: bold;
-         color: white;
-       }
-       a:after {
-         display: none;
-       }
-       hr {
-         display: inline-block;
-         border-color: rgba(255, 255, 255, 0.4);
-       }
-     }
-   }
- 
-   #nav-mobileBtnToogle:not(:checked) + .nav-links {
-     height: 0;
-     opacity: 0;
-   }
- 
-   #nav-mobileBtnToogle:checked + .nav-links {
-     height: 100vh;
-     opacity: 1;
-     overflow-y: auto;
-   }
- }
-
- @media (max-width: 996px) {
-    // Aqui Wtf
-   .sobrenos{   
-      &-oTime{
-         &-container{
-            width: 50%;
-            margin-left: 3%;
-            float:left;
+         &-toogleText {
+            position: absolute;
+            right: 75px;
+            top: 15px;
+            font-size: 20px;
+            color: white;
          }
       }
+      &-links {
+         position: fixed;
+         display: block;
+         z-index: 2;
+         width: 100%;
+         background-color: rgba(20, 20, 20, 0.9);
+         height: 0px;
+         transition: all 0.3s ease-in;
+         overflow-y: hidden;
+         top: 0px;
+         left: 0px;
+         &-btnFechar {
+            padding: 20px 7px 0px 0px;
+            text-align: right;
+            display: block;
+            width: 100%;
+            height: 80px;
+            &-logo {
+               display: inline-block;
+               position: absolute;
+               top: 10px;
+               left: 10px;
+            }
+            label {
+               font-size: 2em;
+               color: white;
+               padding: 7px 16px;
+               border-radius: 5px;
+            }
+            label:hover {
+               cursor: pointer;
+               background: #4d4d4d;
+            }
+         }
+         a {
+            display: block;
+            width: 100%;
+            padding: 30px 15px !important;
+         }
+         a:hover {
+            background: $color-11art !important;
+            font-weight: bold;
+            color: white;
+         }
+         a:after {
+            display: none;
+         }
+         hr {
+            display: inline-block;
+            border-color: rgba(255, 255, 255, 0.4);
+         }
+      }
+   }
+   #nav-mobileBtnToogle:not(:checked)+.nav-links {
+      height: 0;
+      opacity: 0;
+   }
+   #nav-mobileBtnToogle:checked+.nav-links {
+      height: 100vh;
+      opacity: 1;
+      overflow-y: auto;
    }
 }
 
 @media (min-width: 996px) {
    .gallery figure {
       height: 230px;
-    }
+   }
+}
+
+@media screen and (max-width: 990px){
+   .sobrenos {
+      &-oTime {
+         &-card {
+            width: 47%;
+            margin: 8px 1% 8px 1%;
+         }
+      }
+   }
 }
 
 @media screen and (max-width: 1200px) {
-   .boxComoFunciona-ml{
-      margin-left:0;
+   .boxComoFunciona-ml {
+      margin-left: 0;
    }
-
-   .btn{
+   .btn {
       width: 30%;
       float: left;
-
-      &-portfolio{
+      &-portfolio {
          width: 18%;
          min-height: 70px;
-         margin: 0 1% 10px 1%;  
+         margin: 0 1% 10px 1%;
       }
-
-      &-actions{
+      &-actions {
          min-height: 70px;
       }
    }
-   
-   .boxVamosConversar-form-btnEnviar{
+   .boxVamosConversar-form-btnEnviar {
       float: right;
    }
 }
 
 @media screen and (min-width: 1200px) {
-   .boxComoFunciona-ml{
+   .boxComoFunciona-ml {
       margin-left: 12.5%;
    }
-
    .gallery figure {
-      height: 280px; 
-    }
-
-    .btn{
-      &-portfolio{
-         margin-right: 10px; 
+      height: 280px;
+   }
+   .btn {
+      &-portfolio {
+         margin-right: 10px;
       }
-    }
+   }
 }
 
-
 @media screen and (min-width: 1440px) {
-  .container {
-    width: 1200px;
-  }
+   .container {
+      width: 1200px;
+   }
 }
 
 @media screen and (min-width: 1920px) {
-  .container {
-    width: 1440px;
-  }
+   .container {
+      width: 1440px;
+   }
 }
-

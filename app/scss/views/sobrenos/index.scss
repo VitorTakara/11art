@@ -1,0 +1,97 @@
+// .sobrenos {
+//    &-11art {
+//       text-align: justify;
+//       font-size: 2em;
+//    }
+//    &-oTime {
+//       &-member {
+//          display: flex;
+//          justify-content: center;
+//          align-content: center;
+//          &-img{
+//             align-self: center;
+//             img{
+//                border-radius: 50%;
+//                width: 100%;
+//             }
+//          }
+//          &-info {
+//             align-self: center;
+//             &-name {
+//                font-size: 2.5em;
+//                font-weight: 600;
+//             }
+//             &-function {
+//                margin-top: -38px;
+//                font-size: 1.3em;
+//             }
+//             &-bio {
+//                margin-top: -5px;
+//                font-size: 1.6em;
+//             }
+//          }
+//       }
+//    }
+// }
+
+.sobrenos {
+      &-11art {
+         text-align: justify;
+         font-size: 1.8em;
+         padding: 0 15px;
+      }
+      &-oTime {
+         &-card {
+            width: 23%;
+            float: left;
+            -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.14);
+            -moz-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.14);
+            box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.14);
+            padding: 35px 15px 30px 15px;
+            border-radius: 5px;
+            margin: 8px 1% 8px 1%;
+
+            &:hover &-info{
+               &-name{
+                  color: $color-11art;
+               }
+            }
+            
+            &-contact{
+               margin-top: 20px;
+               &-a{ 
+                  margin-left: 10px;
+                  cursor: pointer;  
+                  color: dimgrey;
+                  &:hover{
+                     color: $color-11art;
+                  }
+               } 
+            } 
+
+            &-img{
+               text-align: center;
+               img{
+                  border-radius: 50%;
+                  width: 50%;
+               }
+            }
+            &-info {
+               margin-top: -15px;
+               text-align: center; 
+               &-name {
+                  font-size: 2.5em;
+                  font-weight: 600;
+               }
+               &-function {
+                  margin-top: -35px;
+                  font-size: 1.2em;
+               }
+               &-bio {
+                  margin-top: -5px;
+                  font-size: 1.2em;
+               }
+            }
+         }
+      }
+   }

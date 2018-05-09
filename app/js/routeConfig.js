@@ -8,9 +8,10 @@ function loadHTML(url, id, view) {
    req.send();
    req.onload = function () {
       var navbar = getNavBar(view);
+      var vamosConversar = getVamosConversar(view);
       var footer = getFooter(view);
 
-      $id(id).innerHTML = navbar + req.responseText + footer; // Insere no HTML
+      $id(id).innerHTML = navbar + req.responseText + vamosConversar + footer; // Insere no HTML
       initComponents(); // Iniciar Galeria e Animações suaves
       smoothScroll("view"); // Vá para o topo
       view == "home" ? initParticulasBG() : destroyParticulasBG(); // Constrói/Destrói particulas baseado na view
@@ -65,31 +66,10 @@ router.resolve();
 
 
 function getNavBar(view) {
-   var navBar_color;
-
-   switch (view) {
-      case "home":
-         navBar_color = "#fb8c00ba";
-         break;
-      case "web":
-         navBar_color = "rgb(0, 122, 250)";
-         break;
-      case "3d":
-         navBar_color = "rgb(88, 86, 214)";
-         break;
-      case "video":
-         navBar_color = "rgb(255, 59, 48)";
-         break;
-      case "design":
-         navBar_color = "rgb(76, 217, 100)";
-         break;
-      default:
-         navBar_color = "#fb8c00";
-         break;
-   }
+   var viewColor = getViewColor(view);
 
    return `
-      <nav class="nav strokeEffect" style="background:${navBar_color}">
+      <nav class="nav strokeEffect" style="background:${viewColor}">
       <div class="nav-header">
          <div class="nav-header-title">
             <a href="#!home">
@@ -120,6 +100,44 @@ function getNavBar(view) {
    `;
 };
 
+function getVamosConversar(view){
+   if(view != 'home')
+      return `
+   <div class="row animation-default">
+      <div class="col-md-12 pb-8">
+         <article class="boxVamosConversar">
+            <div class="text-center">
+               <h2 class="boxVamosConversar-title">Vamos
+                  <span class="text-mark text-mark-${view}">Conversar?</span> ;)</h2>
+            </div>
+            <form class="boxVamosConversar-form" role="form">
+               <div class="col-lg-offset-1 col-lg-3 col-md-5 text-center">
+                  <img class="boxVamosConversar-img mb-7" src="./img/postbox.svg">
+               </div>
+               <div class="col-lg-7 col-md-7 col-xs-12">
+                  <div class="formControl">
+                     <label class="formControl-label">Nome</label>
+                     <input required class="formControl-input formControl-input-${view}" placeholder="Ex: Joãozinho" />
+                  </div>
+                  <div class="formControl">
+                     <label class="formControl-label">Email</label>
+                     <input required type="email" class="formControl-input formControl-input-${view}" placeholder="seuemail@email.com" />
+                  </div>
+                  <div class="formControl">
+                     <label class="formControl-label">Mensagem</label>
+                     <textarea rows="3" required class="formControl-input formControl-input-${view}" placeholder="(00) 00000-0000"></textarea>
+                  </div>
+                  <button class="boxVamosConversar-form-btnEnviar btn btn-fill-${view}" type="button">Enviar</button>
+                  <button class="boxVamosConversar-form-btnEnviar btn btn-outline-reset" type="reset">Limpar</button>
+               </div>
+            </form>
+         </article>
+      </div>
+   </div>`;
+   else 
+      return '';
+}
+
 function getFooter(view){
    if(view != 'home')
       return `
@@ -140,3 +158,18 @@ function getFooter(view){
    else
       return '';
 };
+
+function getViewColor(view){
+   if(view == "home")
+      return "#fb8c00ba";
+   else if(view == "web")
+      return "rgb(0, 122, 250)";
+   else if(view == "video")
+      return "rgb(255, 59, 48)";
+   else if(view == "3d")
+      return "rgb(88, 86, 214)";
+   else if(view == "design")
+      return "rgb(76, 217, 100)";
+   else
+      return "#fb8c00";
+}
