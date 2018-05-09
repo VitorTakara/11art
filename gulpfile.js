@@ -63,7 +63,10 @@ gulp.task("sass", function() {
 
 gulp.task("js", function() {
   return gulp
-    .src(["app/js/navigo.min.js", "app/js/particles.min.js", "app/js/script.js", "app/js/routeConfig.js", "app/js/portfolioFiltro.js"])
+    .src(["app/js/plugins/navigo.min.js", "app/js/plugins/particles.min.js", "app/js/gallery.js", 
+    "app/js/smoothScroll.js", "app/js/particles.js", "app/js/initialization.js", "app/js/views/footer.js", 
+    "app/js/views/navbar.js", "app/js/views/vamos.conversar.js", "app/js/views/viewColor.js",
+    "app/js/routeConfig.js", "app/js/portfolioFiltro.js"])
     .pipe(sourcemaps.init())
     .pipe(rigger())
     .pipe(concat("main.js"))
