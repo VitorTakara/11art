@@ -18,3 +18,17 @@ function initComponents() {
    if (document.querySelectorAll('.gallery').length > 0)
       initPhotoSwipeFromDOM('.gallery');
 }
+
+function initView(view){
+   var navbar = getNavBar(view);
+   var vamosConversar = getVamosConversar(view);
+   var nossosTrabalhos = getNossosTrabalhos(view);
+   var comoFunciona = getComoFunciona(view);
+   var footer = getFooter(view);
+   var modulo = getModuloView(view);
+
+   return {
+      navbar: navbar,
+      main: modulo + comoFunciona + nossosTrabalhos + vamosConversar + footer
+   };
+}

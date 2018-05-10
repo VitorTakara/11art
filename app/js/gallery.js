@@ -24,14 +24,21 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
 
          size = linkEl.getAttribute('data-size').split('x');
 
-         // create slide object
-         item = {
-            src: linkEl.getAttribute('href'),
-            w: parseInt(size[0], 10),
-            h: parseInt(size[1], 10)
-         };
-
-
+         if (linkEl.getAttribute('data-type') == "video") {
+            var videoURL = linkEl.getAttribute('href');
+            var template = `<div class="gallery-container">
+                              <iframe class="gallery-container-iframe" src="${videoURL}" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
+                            </div>`;
+            item = {
+              html: template
+            };
+          } else {
+            item = {
+              src: linkEl.getAttribute('href'),
+              w: parseInt(size[0], 10),
+              h: parseInt(size[1], 10)
+            };
+          }
 
          if (figureEl.children.length > 1) {
             // <figcaption> content

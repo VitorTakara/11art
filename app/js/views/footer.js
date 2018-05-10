@@ -1,7 +1,6 @@
 function getFooter(view) {
    if (view != 'home')
       return `
-      <div class="container">
          <hr>
          <footer class="footer">
             <div class="footer-left">
@@ -13,8 +12,7 @@ function getFooter(view) {
             <div class="footer-right">
                <a target="_blank" href="https://www.google.com"><i class="footer-right-fb fa fa-facebook-official fa-3x"></i></a>
             </div>
-         </footer>
-      </div>`;
+         </footer>`;
    else
       return '';
 };

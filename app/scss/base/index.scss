@@ -29,6 +29,22 @@ body {
    z-index: 1;
 }
 
+.gallery{
+   &-container{
+      position: relative;
+      overflow: hidden;
+      padding-top: 56.25%;
+      &-iframe{
+         position: absolute;
+         top: 5%;
+         left: 5%; 
+         width: 90%;
+         height: 95%;
+         border: 0;
+      }
+   }
+}
+
 .nav {
   height: 100px;
   width: 100%;
