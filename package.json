@@ -1,10 +1,10 @@
 {
-  "name": "template-project_with_gulp-sass-browsersync",
+  "name": "11Art",
   "version": "1.0.0",
-  "description": "Start Template",
+  "description": "11Art - Time especializado freelancer que abrange todas as áreas de arte e web",
   "main": "index.js",
-  "repository": "https://github.com/artemsheludko/start-template-gulp",
-  "author": "Artem Sheludko",
+  "repository": "https://github.com/vitortkr/11art",
+  "author": "11Art",
   "license": "MIT",
   "dependencies": {
     "browser-sync": "^2.18.8",
