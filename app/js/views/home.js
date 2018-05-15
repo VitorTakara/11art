@@ -1,8 +1,7 @@
 function getHome(view){
       return `
-      <div class="container-fluid">
          <section>
-            <article class="container">
+            <article>
                <h1 class="text-center text-white tituloBoasVindas animation-modulosServicos">
                   <span class="font-weight-bold">${global.home.titulo[0]}</span> ${global.home.titulo[1]} 
                   <span class="font-weight-bold">${global.home.titulo[2]}</span>
@@ -55,6 +54,5 @@ function getHome(view){
                </div>
             </article>
          </section>
-      </div>
       `;
 }
