@@ -1,39 +1,38 @@
 .tituloBoasVindas {
-  font-size: 3em;
-  color: white;
-  padding-top: 40px;
+   font-size: 3em;
+   color: white;
+   padding-top: 40px;
 }
 
 .modulo {
-  padding-top: 50px;
-  min-height: 450px;
-  font-size: 1.5em;
-  position: relative;
-  z-index: 3;
-
-  &-img {
-    width: 100%;
-    max-width: 120px;
-  }
-  &-design,
-  &-web,
-  &-video,
-  &-3d {
-    border-radius: 5px;
-    color: white;
-    height: 100%;
-    padding: 10px 10px 20px 10px;
-  }
-  &-design {
-    background: $color-modulo-design;
-  }
-  &-web {
-    background: $color-modulo-web;
-  }
-  &-video {
-    background: $color-modulo-video;
-  }
-  &-3d {
-    background: $color-modulo-3d;
-  }
+   padding-top: 50px;
+   margin-bottom: 50px;
+   font-size: 1.5em;
+   position: relative;
+   z-index: 3;
+   &-img {
+      width: 100%;
+      max-width: 120px;
+   }
+   &-design,
+   &-web,
+   &-video,
+   &-3d {
+      min-height: 410px;
+      border-radius: 5px;
+      color: white;
+      padding: 10px 10px 10px 10px;
+   }
+   &-design {
+      background: $color-modulo-design;
+   }
+   &-web {
+      background: $color-modulo-web;
+   }
+   &-video {
+      background: $color-modulo-video;
+   }
+   &-3d {
+      background: $color-modulo-3d;
+   }
 }

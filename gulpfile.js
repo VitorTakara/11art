@@ -63,7 +63,7 @@ gulp.task("sass", function() {
 
 gulp.task("js", function() {
   return gulp
-    .src(["app/js/plugins/navigo.min.js", "app/js/plugins/particles.min.js", "app/js/gallery.js", 
+    .src(["app/js/locales/pt-br.js", "app/js/plugins/navigo.min.js", "app/js/plugins/particles.min.js", "app/js/gallery.js", 
     "app/js/smoothScroll.js", "app/js/particles.js", "app/js/initialization.js", "app/js/views/footer.js", 
     "app/js/views/contato.js", "app/js/views/home.js", "app/js/views/portfolio.js", "app/js/views/servicos.js", 
     "app/js/views/sobrenos.js", "app/js/views/navbar.js", "app/js/views/vamos.conversar.js",

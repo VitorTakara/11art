@@ -10,8 +10,8 @@ function getModuloView (view) {
       // [ DESIGN ]
       if(view == "design"){
          data = {
-            title: 'Design Gráfico',
-            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ratione reiciendis totam odio, quo deleniti beatae eaque expedita vero ea, odit est officiis temporibus ad.',
+            title: global.home.design_titulo,
+            description: global.home.design_desc,
             img: './img/design_c.svg',
          }
       }
@@ -19,8 +19,8 @@ function getModuloView (view) {
       // [ WEB ]
       else if(view == "web"){
          data = {
-            title: 'Website',
-            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ratione reiciendis totam odio, quo deleniti beatae eaque expedita vero ea, odit est officiis temporibus ad.',
+            title: global.home.web_titulo,
+            description: global.home.web_desc,
             img: './img/web_c.svg',
          }
       }
@@ -28,8 +28,8 @@ function getModuloView (view) {
       // [ VIDEO ]
       else if(view == "video"){
          data = {
-            title: 'Produção Vídeo',
-            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ratione reiciendis totam odio, quo deleniti beatae eaque expedita vero ea, odit est officiis temporibus ad.',
+            title: global.home.video_titulo,
+            description: global.home.video_desc,
             img: './img/video_c.svg',
          }
       }
@@ -37,8 +37,8 @@ function getModuloView (view) {
       // [ 3D ]
       else if(view == "3d"){
          data = {
-            title: 'Modelagem 3D',
-            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ratione reiciendis totam odio, quo deleniti beatae eaque expedita vero ea, odit est officiis temporibus ad.',
+            title: global.home.model3d_titulo,
+            description: global.home.model3d_desc,
             img: './img/3d_c.svg',
          }
       }
@@ -57,9 +57,9 @@ function getModuloView (view) {
                <p class="panel-right-description mt-0">${data.description}</p>
                <div class="row">
                   <div class="col-md-12 animation-default">
-                     <button class="btn btn-outline-${view}" role="button" onclick="smoothScroll('container_comoFunciona')" type="button">Como funciona</button>
-                     <button class="btn btn-outline-${view} ml-2" role="button" onclick="smoothScroll('container_nossosTrabalhos')" type="button">Nossos trabalhos</button>
-                     <button class="btn btn-fill-${view} ml-2" role="button" onclick="smoothScroll('container_vamosConversar')" type="button">Vamos conversar?</button>
+                     <button class="btn btn-outline-${view}" role="button" onclick="smoothScroll('container_comoFunciona')" type="button">${global.modulos.btn_como_funciona}</button>
+                     <button class="btn btn-outline-${view} ml-2" role="button" onclick="smoothScroll('container_nossosTrabalhos')" type="button">${global.modulos.btn_nossos_trabalhos}</button>
+                     <button class="btn btn-fill-${view} ml-2" role="button" onclick="smoothScroll('container_vamosConversar')" type="button">${global.modulos.btn_vamos_conversar}</button>
                   </div>
                </div>
             </div>

@@ -12,7 +12,7 @@ function getComoFunciona(view) {
          <div class="col-md-12">
          <article class="boxComoFunciona">
             <div class="text-center">
-               <h2 class="boxComoFunciona-title animation-default pb-8">Como funciona? <span class="text-mark text-mark-${viewClass}">É bem simples!</span></h2>
+               <h2 class="boxComoFunciona-title animation-default pb-8">${global.como_funciona.titulo[0]} <span class="text-mark text-mark-${viewClass}">${global.como_funciona.titulo[1]}</span></h2>
             </div>
 
             <div class="col-lg-3 col-md-4 boxComoFunciona-ml animation-comoFunciona">
@@ -20,8 +20,8 @@ function getComoFunciona(view) {
                   <i class="boxComoFunciona-circle-${viewClass}-img fa fa-5x fa-smile-o"></i>
                </div>
                <div class="boxComoFunciona-description">
-                  <h4 class="boxComoFunciona-description-title mb-0">1 - Conta pra gente!</h4>
-                  <p class="boxComoFunciona-description-subtitle mt-0">Primeiro você vai dizer do que precisa! Banner, cartão, facebook, panfleto (...)</p>   
+                  <h4 class="boxComoFunciona-description-title mb-0">${global.como_funciona.passo1_titulo}</h4>
+                  <p class="boxComoFunciona-description-subtitle mt-0">${global.como_funciona.passo1_desc}</p>   
                </div>
             </div>
 
@@ -30,8 +30,8 @@ function getComoFunciona(view) {
                   <i class="boxComoFunciona-circle-${viewClass}-img fa fa-5x fa-pencil"></i>
                </div>
                <div class="boxComoFunciona-description">
-                  <h4 class="boxComoFunciona-description-title mb-0">2 - Primeiro esboço</h4>
-                  <p class="boxComoFunciona-description-subtitle mt-0">Vamos preparar e apresentar um esboço do que planejamos fazer, <span class="fw-700">sem pagamento inicial.</span></p>   
+                  <h4 class="boxComoFunciona-description-title mb-0">${global.como_funciona.passo2_titulo}</h4>
+                  <p class="boxComoFunciona-description-subtitle mt-0">${global.como_funciona.passo2_desc[0]} <span class="fw-700">${global.como_funciona.passo2_desc[1]}</span></p>   
                </div>
             </div>
 
@@ -40,8 +40,8 @@ function getComoFunciona(view) {
                   <i class="boxComoFunciona-circle-${viewClass}-img fa fa-5x fa-star-o"></i>
                </div>
                <div class="boxComoFunciona-description">
-                  <h4 class="boxComoFunciona-description-title mb-0">3 - Aprovado!</h4>
-                  <p class="boxComoFunciona-description-subtitle mt-0">Com o esboço aprovado, iremos dar continuidade ao projeto ....... </p>   
+                  <h4 class="boxComoFunciona-description-title mb-0">${global.como_funciona.passo3_titulo}</h4>
+                  <p class="boxComoFunciona-description-subtitle mt-0">${global.como_funciona.passo3_desc} </p>   
                </div>
             </div>
          </article>
