@@ -5,7 +5,6 @@ function getVamosConversar(view) {
    else
       viewColor = view;
 
-   if (view != 'home')
       return `
       <hr id="container_vamosConversar">  <!-- Anchor -->
       <div class="row animation-default">
@@ -39,6 +38,4 @@ function getVamosConversar(view) {
             </article>
          </div>
       </div>`;
-   else
-      return '';
 }

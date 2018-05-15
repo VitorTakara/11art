@@ -1,5 +1,5 @@
 function getComoFunciona(view) {
-   if (view != 'home' && view != 'portfolio' && view != 'sobrenos' && view != 'contato'){
+   if (view != 'portfolio' && view != 'sobrenos' && view != 'contato'){
       var viewClass = getViewColor(view);
       if (viewClass == "#fb8c00")
          viewClass = "11art";

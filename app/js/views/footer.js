@@ -1,5 +1,4 @@
 function getFooter(view) {
-   if (view != 'home')
       return `
          <hr>
          <footer class="footer">
@@ -13,6 +12,4 @@ function getFooter(view) {
                <a target="_blank" href="https://www.google.com"><i class="footer-right-fb fa fa-facebook-official fa-3x"></i></a>
             </div>
          </footer>`;
-   else
-      return '';
 };

@@ -19,16 +19,44 @@ function initComponents() {
       initPhotoSwipeFromDOM('.gallery');
 }
 
-function initView(view){
-   var navbar = getNavBar(view);
-   var vamosConversar = getVamosConversar(view);
-   var nossosTrabalhos = getNossosTrabalhos(view);
-   var comoFunciona = getComoFunciona(view);
-   var footer = getFooter(view);
-   var modulo = getModuloView(view);
+function initView(view, type){
+   if(type == "home"){
+      return {
+         navbar: getNavBar(view),
+         main: getHome()
+      };
+   } else {
 
-   return {
-      navbar: navbar,
-      main: modulo + comoFunciona + nossosTrabalhos + vamosConversar + footer
-   };
+      var vamosConversar = '', 
+         nossosTrabalhos = '',
+         comoFunciona = '',
+         footer = '',
+         modulo = '',
+         portfolio = '',
+         servicos = '',
+         sobrenos = '',
+         contato = '',
+         navbar = '';
+
+      navbar = getNavBar(view);
+      comoFunciona = getComoFunciona(view);
+      nossosTrabalhos = getNossosTrabalhos(view);
+      vamosConversar = getVamosConversar(view);
+      footer = getFooter(view);
+
+      if(type == "modulos")
+         modulo = getModuloView(view);
+
+      if(type == "menu") {
+         portfolio = getPortfolio(view);
+         servicos = getServicos(view);
+         sobrenos = getSobrenos(view);
+         contato = getContato(view);
+      }
+
+      return {
+         navbar: navbar,
+         main: modulo + portfolio + servicos + sobrenos + contato + comoFunciona + nossosTrabalhos + vamosConversar + footer
+      };
+   }
 }
