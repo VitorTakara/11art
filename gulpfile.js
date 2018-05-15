@@ -3,7 +3,6 @@
 GULPFILE 11ART - COMANDOS
 
 1) gulp build - compila o projeto e serve pelo browserSync para o autoreload
-2) gulp watch - assiste por mudanças e compila se houverem
 
 */
 
