@@ -11,7 +11,7 @@ function getModuloView (view) {
       if(view == "design"){
          data = {
             title: global.home.design_titulo,
-            description: global.home.design_desc,
+            description: global.modulos.design_desc,
             img: './img/design_c.svg',
          }
       }
@@ -20,7 +20,7 @@ function getModuloView (view) {
       else if(view == "web"){
          data = {
             title: global.home.web_titulo,
-            description: global.home.web_desc,
+            description: global.modulos.web_desc,
             img: './img/web_c.svg',
          }
       }
@@ -29,7 +29,7 @@ function getModuloView (view) {
       else if(view == "video"){
          data = {
             title: global.home.video_titulo,
-            description: global.home.video_desc,
+            description: global.modulos.video_desc,
             img: './img/video_c.svg',
          }
       }
@@ -38,7 +38,7 @@ function getModuloView (view) {
       else if(view == "3d"){
          data = {
             title: global.home.model3d_titulo,
-            description: global.home.model3d_desc,
+            description: global.modulos.model3d_desc,
             img: './img/3d_c.svg',
          }
       }
