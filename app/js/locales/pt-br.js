@@ -19,16 +19,9 @@ var global = {
    },
 
    modulos:{
-      design_titulo: "Design Gráfico",
       design_desc: "...",
-
-      web_titulo: "Website",
       web_desc: "...",
-
-      video_titulo: "Produção Vídeo",
       video_desc: "...",
-
-      model3d_titulo: "Modelagem 3D",
       model3d_desc: "...",
 
       btn_como_funciona: "Como funciona",
