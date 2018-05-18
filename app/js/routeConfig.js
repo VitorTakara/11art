@@ -26,7 +26,7 @@ router.on({
 
 // set the default route
 router.on(function () {
-   document.getElementById('main').innerHTML = loadHTML("home", "home");
+   loadHTML("home", "home");
 });
 
 // set the 404 route
