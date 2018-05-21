@@ -1,4 +1,5 @@
 function loadHTML(view, type) {
+   document.body.style.backgroundImage = "";
    var containers = initView(view, type); // Pega os containers
 
    // Insere no HTML
