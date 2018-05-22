@@ -1,6 +1,5 @@
 function initParticulasBG() {
-   document.body.style.backgroundImage = "url('./img/bg.jpg')";
-   document.body.style.backgroundSize = "cover";
+   document.body.style.background = "url('./img/bg.jpg') no-repeat center center fixed";
    if (pJSDom.length == 1) {
       document.getElementById("particles-js").style.display = "block";
       pJSDom[0].pJS.fn.vendors.start();
@@ -45,7 +44,7 @@ function initParticulasBG() {
                }
             },
             "size": {
-               "value": 3,
+               "value": 4,
                "random": true,
                "anim": {
                   "enable": false,
@@ -58,7 +57,7 @@ function initParticulasBG() {
                "enable": true,
                "distance": 120,
                "color": "#fa7500",
-               "opacity": 0.8,
+               "opacity": 0.9,
                "width": 1
             },
             "move": {
