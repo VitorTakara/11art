@@ -18,6 +18,7 @@ var gulp = require("gulp"),
   rigger = require("gulp-rigger"),
   sourcemaps = require('gulp-sourcemaps'),
   uglify = require('gulp-uglify-es').default,
+  htmlmin = require('gulp-htmlmin'),
   rimraf = require("rimraf");
 
 // BROWSERSYNC
@@ -33,7 +34,14 @@ gulp.task("browser-sync", function() {
 
 // HTML
 gulp.task("html", function() {
-  return gulp.src("app/*.html").pipe(gulp.dest("dist"));
+   return gulp.src("app/*.html")
+   .pipe(htmlmin({collapseWhitespace: true}))
+   .pipe(gulp.dest("dist"));
+});
+
+// Favicon
+gulp.task("favicon", function() {
+   return gulp.src("app/favicon.ico").pipe(gulp.dest("dist"));
 });
 
 // SASS
@@ -103,6 +111,7 @@ gulp.task("build", function() {
     "sass",
     "js",
     "img",
+    "favicon",    
     "browser-sync",
     "finish"
   );
