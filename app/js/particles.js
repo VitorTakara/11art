@@ -1,5 +1,5 @@
 function initParticulasBG() {
-   document.body.style.backgroundImage = "url('../img/bg.jpg')";
+   document.body.style.backgroundImage = "url('./img/bg.jpg')";
    document.body.style.backgroundSize = "cover";
    if (pJSDom.length == 1) {
       document.getElementById("particles-js").style.display = "block";
