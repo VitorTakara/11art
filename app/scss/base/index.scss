@@ -15,13 +15,16 @@ body{
    -moz-background-size: cover;
    -o-background-size: cover;
    background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center center;
 }
 
 html,
 body {
   font-size: 10px;
   height: 100%;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif; 
 }
 
 #particles-js{

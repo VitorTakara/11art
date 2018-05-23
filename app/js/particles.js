@@ -1,5 +1,8 @@
 function initParticulasBG() {
    document.body.style.backgroundImage = "url('./img/bg.jpg')";
+   document.body.style.overflowY = "scroll";
+   document.documentElement.style.overflow = "hidden";
+   smoothScroll("navbar"); // Vá para o topo
    if (pJSDom.length == 1) {
       document.getElementById("particles-js").style.display = "block";
       pJSDom[0].pJS.fn.vendors.start();

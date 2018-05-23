@@ -1,5 +1,6 @@
 function loadHTML(view, type) {
-   document.body.style.background = "";
+   document.body.style.backgroundImage = "";
+   document.documentElement.style.overflow = "unset";
    var containers = initView(view, type); // Pega os containers
 
    // Insere no HTML
