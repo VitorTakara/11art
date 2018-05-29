@@ -6,7 +6,7 @@ var global = {
       btn_continuar: "CONTINUAR",
 
       design_titulo: "Design Gráfico",
-      design_desc: "BANNER, FYLER, MIDIAS SOCIAIS, IMPRESSOS...",
+      design_desc: "IMPRESSOS, DIGITAL, MIDIAS SOCIAIS, BANNERS...",
 
       web_titulo: "Website",
       web_desc: "COMPLETO, REPONSIVO, RÁPIDO, SEO, ACESSÍVEL...",
@@ -19,8 +19,10 @@ var global = {
    },
 
    modulos:{
-      design_desc: "...",
-      web_desc: "...",
+      design_desc: `O <strong>Design</strong> é uma porta de entrada que gera no cliente curiosidade e interesse, traçamos e aplicamos <strong>técnicas e estratégias</strong> para que o design de seu produto atinja o público alvo e gere uma experiência fantástica ao cliente.
+                    <br><strong>Nós fazemos:</strong> Banners, fylers, cartões de visitas, catálogos, posteres, folhetos, Perfil/Capa/Posts para Facebook e Instagram, etc...`,
+      web_desc: `Prezamos pela construção de <strong>sites modernos</strong>, funcionais, responsivos <i>(Adaptado para Desktop/Smartphones)</i>, de fácil navegação, e totalmente preparado as exigências para uma boa relevância no google e demais plataformas de busca.
+                 <br><strong>Nós fazemos:</strong> Manutenção de site, site institucional, e-commerce, email marketing, blog, hotsite, landing page, etc...`,
       video_desc: "...",
       model3d_desc: "...",
 
@@ -33,7 +35,12 @@ var global = {
       title_11art: "11Art",
       desc_11art: `<strong>11Art</strong> é uma marca que compõe um time de profissionais que atendem todas as áreas de arte.
              <strong>11Art</strong> foi batizado assim porque representa a 11° Arte
-             <i>(décima primeira arte)</i>, que é a união de todas as artes, seja ela gráfica, web, impressa, 3D ou vídeo.`,
+             <i>(décima primeira arte)</i>, que é a união de todas as artes, seja ela gráfica, web, impressa, 3D ou vídeo.
+             Nós da <strong>11art</strong> criamos este portal com a finalidade de ser um meio simples e fácil de solicitar uma 
+            peça de arte, abolimos o contrato de papel para que o contato seja feito totalmente online. De forma <strong>fácil, prática e rápida</strong>.
+            Acreditamos que para atingir o melhor resultado em um trabalho, devemos equilibrar amor e profissional.
+            Com esse conceito formamos nossa equipe de profissionais de conhecimentos e vivências distintas, que unidas
+            formam um time <strong>completo e único.</strong>`,
       title_otime: "O Time",
 
       membro_1: {
