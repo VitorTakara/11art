@@ -37,10 +37,10 @@ var global = {
              <strong>11Art</strong> foi batizado assim porque representa a 11° Arte
              <i>(décima primeira arte)</i>, que é a união de todas as artes, seja ela gráfica, web, impressa, 3D ou vídeo.
              Nós da <strong>11art</strong> criamos este portal com a finalidade de ser um meio simples e fácil de solicitar uma 
-            peça de arte, abolimos o contrato de papel para que o contato seja feito totalmente online. De forma <strong>fácil, prática e rápida</strong>.
+            peça de arte, abolimos a papelada e burocracia para que o contato seja feito totalmente online. De forma <strong>fácil, prática e rápida</strong>.
             Acreditamos que para atingir o melhor resultado em um trabalho, devemos equilibrar amor e profissional.
             Com esse conceito formamos nossa equipe de profissionais de conhecimentos e vivências distintas, que unidas
-            formam um time <strong>completo e único.</strong>`,
+            formam um time <strong>completo e único.</strong> Eai, vamos conversar ;) ?`,
       title_otime: "O Time",
 
       membro_1: {
