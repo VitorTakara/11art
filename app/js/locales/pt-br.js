@@ -56,11 +56,11 @@ var global = {
       membro_2: {
          foto: "http://placekitten.com/500/500",
          foto_alt: "",
-         nome: "",
-         funcao: "",
-         bio: "...",
-         facebook: "...",
-         linkedin: "..."
+         nome: "Andrea Ishizawa",
+         funcao: "Web Designer",
+         bio: "Graduada no curso de Jogos Digitais pela PUC-SP e com foco em criação e desenvolvimento de sites desde 2016. Adora um bom design e está sempre buscando as melhores referências para seus projetos",
+         facebook: "https://www.facebook.com/andrea.ishizawa",
+         linkedin: "www.linkedin.com/in/andrea-ishizawa"
       },
 
       membro_3: {
