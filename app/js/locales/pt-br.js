@@ -21,7 +21,7 @@ var global = {
    modulos:{
       design_desc: `O <strong>Design</strong> é uma porta de entrada que gera no cliente curiosidade e interesse, traçamos e aplicamos <strong>técnicas e estratégias</strong> para que o design de seu produto atinja o público alvo e gere uma experiência fantástica ao cliente.
                     <br><strong>Nós fazemos:</strong> Banners, fylers, cartões de visitas, catálogos, posteres, folhetos, Perfil/Capa/Posts para Facebook e Instagram, etc...`,
-      web_desc: `Prezamos pela construção de <strong>sites modernos</strong>, funcionais, responsivos <i>(Adaptado para Desktop/Smartphones)</i>, de fácil navegação, e totalmente preparado as exigências para uma boa relevância no google e demais plataformas de busca.
+      web_desc: `Prezamos pela construção de <strong>sites modernos</strong>, funcionais, responsivos <i>(Adaptado para Desktop/Smartphones)</i>, de fácil navegação, e totalmente preparado para obter uma boa relevância no google e demais plataformas de busca.
                  <br><strong>Nós fazemos:</strong> Manutenção de site, site institucional, e-commerce, email marketing, blog, hotsite, landing page, etc...`,
       video_desc: "...",
       model3d_desc: "...",
