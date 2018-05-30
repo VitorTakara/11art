@@ -44,13 +44,13 @@ var global = {
       title_otime: "O Time",
 
       membro_1: {
-         foto: "http://placekitten.com/500/500",
-         foto_alt: "",
-         nome: "",
-         funcao: "",
-         bio: "...",
-         facebook: "...",
-         linkedin: "..."
+         foto: "https://scontent.fcgh5-1.fna.fbcdn.net/v/t1.0-1/p160x160/33773341_1296181297179970_4658858782405689344_n.jpg?_nc_cat=0&oh=ea0ee805b4e66a7f0ac2d7c13302ce35&oe=5B8E1616",
+         foto_alt: "Foto do profissional Vitor Takara, desenvolvedor web e designer da 11art",
+         nome: "Vitor Takara",
+         funcao: "Desenvolvedor Web e Designer",
+         bio: "Desenvolvedor desde 2015, Designer desde 2012 e criativo desde 1995. Apaixonado por tecnologia e sempre aspirando novas tendências. Sonho em conhecer o mundo para ouvir histórias e colher experiências.",
+         facebook: "https://www.facebook.com/people/Vitor-Takara/100003643373823",
+         linkedin: "https://br.linkedin.com/in/vitortakara"
       },
 
       membro_2: {
